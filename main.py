@@ -1,9 +1,13 @@
 """
 MIT License
 
-Copyright (c) 2023 Ulster University (https://www.ulster.ac.uk).
-Project: Harmony (https://harmonydata.ac.uk)
-Maintainer: Thomas Wood (https://fastdatascience.com)
+Copyright (c) 2025 PAMHoYA Team (https://pamhoya.ac.uk)
+Project: PAMHoYA - Platform for Advancing Mental Health in Youth and Adolescence
+Lead Developer: Augustine Khumalo
+
+This software extends and builds upon the Harmony framework 
+(Copyright (c) 2023 Ulster University - https://harmonydata.ac.uk)
+for item harmonisation functionality.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -40,15 +44,28 @@ from harmony_api.core.settings import settings
 from harmony_api.routers.health_check_router import router as health_check_router
 from harmony_api.routers.info_router import router as info_router
 from harmony_api.routers.text_router import router as text_router
+from harmony_api.routers.data_discovery_router import router as data_discovery_router
+from harmony_api.routers.data_harmonisation_router import router as data_harmonisation_router
+from harmony_api.routers.summarisation_router import router as summarisation_router
+from harmony_api.routers.analytics_router import router as analytics_router
 from harmony_api.services.instruments_cache import InstrumentsCache
 from harmony_api.scheduler import scheduler
 from harmony_api.services.vectors_cache import VectorsCache
 
 description = """
-Documentation for Harmony API.
+PAMHoYA API - Platform for Advancing Mental Health in Youth and Adolescence
 
-Harmony is a tool using AI which allows you to compare items from questionnaires and identify similar content.
-You can try Harmony at <a href="https://harmonydata.ac.uk/app">harmonydata.ac.uk/harmony_api</a> and you can read our blog at <a href="https://harmonydata.ac.uk">harmonydata.ac.uk</a>.
+PAMHoYA is a comprehensive platform for mental health research discovery, harmonisation, 
+and analytics across South African languages and beyond. 
+
+The platform enables researchers, policymakers, and community stakeholders to:
+- Discover mental health research datasets
+- Harmonise questionnaires and data across instruments
+- Generate plain-language summaries of research
+- Access role-based analytics and insights
+
+**Item Harmonisation**: Built on the Harmony framework (https://harmonydata.ac.uk)
+**Multilingual Support**: 11 South African languages + 109 global languages via LaBSE
 """
 
 
@@ -59,14 +76,14 @@ async def lifespan(_: FastAPI):
     yield
 
 app_fastapi = FastAPI(
-    title=settings.APP_TITLE,
+    title=settings.APP_TITLE or "PAMHoYA API",
     description=description,
-    version=settings.VERSION,
+    version=settings.VERSION or "1.0.0",
     lifespan=lifespan,
     docs_url="/docs",
     contact={
-        "name": "Thomas Wood",
-        "url": "https://fastdatascience.com",
+        "name": "PAMHoYA Team",
+        "url": "https://pamhoya.ac.uk",
     },
     license_info={
         "name": "MIT License",
@@ -89,6 +106,10 @@ app_fastapi.add_middleware(GZipMiddleware)
 app_fastapi.include_router(health_check_router, tags=["Health Check"])
 app_fastapi.include_router(text_router, tags=["Text"])
 app_fastapi.include_router(info_router, tags=["Info"])
+app_fastapi.include_router(data_discovery_router, tags=["Data Discovery"])
+app_fastapi.include_router(data_harmonisation_router, tags=["Data Harmonisation"])
+app_fastapi.include_router(summarisation_router, tags=["Summarisation"])
+app_fastapi.include_router(analytics_router, tags=["Analytics"])
 
 
 async def main():
