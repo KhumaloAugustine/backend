@@ -1,0 +1,27 @@
+version: '3.3'
+
+services:
+   api:
+     image: harmonydata/harmonyapi:latest
+     depends_on:
+       - tika
+     ports:
+       - "8000:80"
+     restart: always
+     environment:
+       HARMONY_DATA_PATH: /data
+       HARMONY_SENTENCE_TRANSFORMER_PATH: /data/paraphrase-multilingual-MiniLM-L12-v2
+       OPENAI_API_KEY:
+       GOOGLE_APPLICATION_CREDENTIALS:
+       AZURE_OPENAI_API_KEY:
+       AZURE_OPENAI_ENDPOINT:
+       TIKA_SERVER_ENDPOINT: http://tika:9998
+       AZURE_STORAGE_URL:
+     volumes:
+        - harmonyapimount:/data
+
+   tika:
+     image: apache/tika:2.8.0.0-full
+     ports:
+       - "9998:9998"
+     restart: always 

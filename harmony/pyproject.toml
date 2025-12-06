@@ -1,0 +1,76 @@
+[project]
+name = "harmonydata"
+version = "1.0.7"
+description = "Harmony Tool for Retrospective Data Harmonisation"
+readme = "README.md"
+keywords = [
+  "harmony",
+  "harmonisation",
+  "harmonization",
+  "harmonise",
+]
+license = { file = "LICENSE" }
+maintainers = [
+  { name = "Thomas Wood", email = "thomas@fastdatascience.com" },
+]
+authors = [
+    { name = "Thomas Wood", email = "thomas@fastdatascience.com" },
+]
+requires-python = ">=3.10,<=3.13.3"
+classifiers=[
+    # see https://pypi.org/classifiers/
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing :: Linguistic",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Information Technology",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Sociology",
+]
+# core dependencies of harmony
+# this set should be kept minimal!
+dependencies = [
+    "pydantic>=2.11.3; python_version <= '3.13'",
+    "pandas>=2.2.3; python_version <= '3.13'",
+    "tika>=3.1.0; python_version <= '3.13'",
+    "lxml>=5.4.0; python_version <= '3.13'",
+    "langdetect>=1.0.9; python_version <= '3.13'",
+    "XlsxWriter>=3.2.3; python_version <= '3.13'",
+    "openpyxl>=3.1.5; python_version <= '3.13'",
+    "wget>=3.2; python_version <= '3.13'",
+    "sentence-transformers>=4.1.0; python_version <= '3.13'",
+    "numpy==1.26.4; python_version <= '3.13'",
+    "sklearn-crfsuite>=0.5.0; python_version <= '3.13'",
+    "scikit-learn>=1.6.1; python_version <= '3.13'",
+    "scipy>=1.13.1; python_version <= '3.13'",
+    "huggingface-hub>=0.30.2; python_version <= '3.13'",
+    "torch==2.2.2; python_version <= '3.13'",
+    "transformers==4.50.3; python_version <= '3.13'",
+    "fpdf2~=2.8.2; python_version <= '3.13'",
+]
+
+[project.optional-dependencies]
+
+# dev - the developer dependency set, for contributors to harmony
+dev = ["check-manifest", "pytest", "matplotlib"]
+
+[project.urls]
+"Documentation" = "https://harmonydata.ac.uk/frequently-asked-questions/"
+"Bug Reports" = "https://github.com/harmonydata/harmony/issues"
+"Source Code" = "https://github.com/harmonydata/harmony"
+
+[build-system]
+requires = ["setuptools>=46.4.0", "wheel", "twine"]
+build-backend = "setuptools.build_meta"
