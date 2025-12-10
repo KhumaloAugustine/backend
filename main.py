@@ -41,6 +41,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 
 from harmony_api.core.settings import settings
+from harmony_api.core.middleware import error_handling_middleware, logging_middleware
 from harmony_api.routers.health_check_router import router as health_check_router
 from harmony_api.routers.info_router import router as info_router
 from harmony_api.routers.text_router import router as text_router
@@ -90,6 +91,11 @@ app_fastapi = FastAPI(
         "url": "https://opensource.org/license/mit/",
     },
 )
+
+# Add custom middleware (in reverse order of execution)
+# Error handling should be outermost to catch all errors
+app_fastapi.middleware("http")(error_handling_middleware)
+app_fastapi.middleware("http")(logging_middleware)
 
 app_fastapi.add_middleware(
     CORSMiddleware,
