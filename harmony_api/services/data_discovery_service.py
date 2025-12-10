@@ -189,50 +189,10 @@ class AccessRequest(EntityWithTimestamp):
 # ============================================================================
 # REPOSITORY LAYER - Data Access with DRY Principle
 # ============================================================================
-
-class BaseRepository(ABC):
-    """Abstract base repository (Single Responsibility Principle)"""
-    
-    def __init__(self):
-        self.storage: Dict[str, Any] = {}
-    
-    def create(self, entity: Any) -> Any:
-        """Create entity"""
-        self.storage[entity.id] = entity
-        return entity
-    
-    def get(self, entity_id: str) -> Optional[Any]:
-        """Get entity by ID"""
-        return self.storage.get(entity_id)
-    
-    def list(self, filter_func: Optional[Callable] = None) -> List[Any]:
-        """List all entities, optionally filtered"""
-        entities = list(self.storage.values())
-        if filter_func:
-            entities = [e for e in entities if filter_func(e)]
-        return entities
-    
-    def update(self, entity_id: str, **kwargs) -> Optional[Any]:
-        """Update entity fields"""
-        entity = self.get(entity_id)
-        if not entity:
-            return None
-        for key, value in kwargs.items():
-            if hasattr(entity, key):
-                setattr(entity, key, value)
-        if hasattr(entity, 'updated_at'):
-            entity.updated_at = datetime.now()
-        return entity
-    
-    def delete(self, entity_id: str) -> bool:
-        """Delete entity"""
-        if entity_id in self.storage:
-            del self.storage[entity_id]
-            return True
-        return False
+# BaseRepository now imported from base_service module for consistency
 
 
-class DatasetRepository(BaseRepository):
+class DatasetRepository(BaseRepository[Dataset]):
     """Repository for dataset operations"""
     
     def __init__(self, session: Optional[Any] = None):
@@ -240,6 +200,10 @@ class DatasetRepository(BaseRepository):
         self.session = session
         self.access_requests: Dict[str, AccessRequest] = {}
         self._initialize_test_data()
+    
+    def list(self) -> List[Dataset]:
+        """Override list to return typed list"""
+        return super().list()
     
     TEST_DATASETS = [
         {

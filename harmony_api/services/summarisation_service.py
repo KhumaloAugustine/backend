@@ -65,10 +65,11 @@ class SummaryVersion:
 # DATA ACCESS LAYER
 # ============================================================================
 
-class SummarisationRepository:
+class SummarisationRepository(BaseRepository):
     """Repository for summarisation operations"""
     
     def __init__(self):
+        super().__init__()  # Initialize BaseRepository
         self.summaries = {}
         self.versions = {}
         self.deduplication_cache = {}  # study_id -> summary_id mapping

@@ -90,10 +90,11 @@ class Metric:
 # DATA ACCESS LAYER
 # ============================================================================
 
-class AnalyticsRepository:
+class AnalyticsRepository(BaseRepository):
     """Repository for analytics operations"""
     
     def __init__(self):
+        super().__init__()  # Initialize BaseRepository
         self.dashboards = {}
         self.metrics = {}
         self.user_activity_logs = []

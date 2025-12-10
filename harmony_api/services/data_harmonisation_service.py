@@ -60,10 +60,11 @@ class HarmonisationJob:
 # DATA ACCESS LAYER
 # ============================================================================
 
-class HarmonisationRepository:
+class HarmonisationRepository(BaseRepository):
     """Repository for harmonisation operations"""
     
     def __init__(self):
+        super().__init__()  # Initialize BaseRepository
         self.jobs = {}
         self.datasets = {}
         self.mappings = {}
