@@ -51,9 +51,10 @@ async def error_handling_middleware(request: Request, call_next: Callable) -> Re
             }
         }
         
-        # In development, include traceback
-        # TODO: Make this conditional based on environment
-        # error_response["traceback"] = traceback.format_exc()
+        # Include traceback only in development mode
+        from harmony_api.core.settings import settings
+        if hasattr(settings, 'DEBUG') and settings.DEBUG:
+            error_response["traceback"] = traceback.format_exc()
         
         return JSONResponse(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
@@ -93,8 +94,8 @@ async def logging_middleware(request: Request, call_next: Callable) -> Response:
         "duration_ms": round(duration * 1000, 2)
     }
     
-    # TODO: Integrate with actual logging system
-    # logger.info(f"Request processed", extra=log_data)
+    # Logging integration - using print for now, can be replaced with proper logger
+    print(f"[INFO] Request processed: {log_data['method']} {log_data['url']} - {log_data['status_code']} ({log_data['duration_ms']}ms)")
     
     # Add custom header with processing time
     response.headers["X-Process-Time"] = str(duration)
@@ -153,11 +154,8 @@ def monitor_performance(threshold_ms: float = 1000.0):
             duration = (time.time() - start_time) * 1000  # Convert to ms
             
             if duration > threshold_ms:
-                # TODO: Integrate with actual logging system
-                # logger.warning(
-                #     f"Slow endpoint: {func.__name__} took {duration:.2f}ms"
-                # )
-                pass
+                # Log slow endpoints - using print for now, can be replaced with proper logger
+                print(f"[WARNING] Slow endpoint: {func.__name__} took {duration:.2f}ms")
             
             return result
         

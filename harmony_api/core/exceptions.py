@@ -9,7 +9,7 @@ Project: PAMHoYA - Platform for Advancing Mental Health in Youth and Adolescence
 Lead Developer: Augustine Khumalo
 """
 
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, Callable
 from fastapi import status
 
 
@@ -203,7 +203,7 @@ def handle_repository_error(error: Exception, entity_type: str, operation: str) 
     )
 
 
-def safe_execute(func: callable, *args, **kwargs) -> Any:
+def safe_execute(func: Callable, *args, **kwargs) -> Any:
     """
     Execute function and convert exceptions to PAMHoYA exceptions.
     Follows DRY principle - reusable error handling wrapper.

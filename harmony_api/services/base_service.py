@@ -125,7 +125,7 @@ class BaseRepository(IRepository, Generic[TEntity]):
             return True
         return False
     
-    def filter(self, predicate: callable) -> List[TEntity]:
+    def filter(self, predicate: Callable) -> List[TEntity]:
         """
         Filter entities by predicate (DRY - reusable filtering).
         Follows Open/Closed Principle - extensible without modification.
