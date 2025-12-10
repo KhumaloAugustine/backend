@@ -28,6 +28,9 @@ import uuid
 import hashlib
 from abc import ABC, abstractmethod
 
+from harmony_api.services.base_service import BaseRepository, BaseService, BaseEntity
+from harmony_api.core.exceptions import EntityNotFoundException, DuplicateEntityException, ValidationException
+
 # ============================================================================
 # ENUMS & CONSTANTS
 # ============================================================================
@@ -66,20 +69,9 @@ class Serializable(ABC):
         pass
 
 
-class EntityWithTimestamp(Serializable):
-    """Base class for entities with timestamps (DRY)"""
-    def __init__(self):
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
-    
-    def _to_dict_base(self) -> dict:
-        """Base dictionary representation"""
-        return {
-            "id": self.id,
-            "created_at": self.created_at.isoformat(),
-            "updated_at": self.updated_at.isoformat()
-        }
+class EntityWithTimestamp(BaseEntity, Serializable):
+    """Base class for entities with timestamps (DRY) - now extends BaseEntity"""
+    pass
 
 
 class TextSearchable:
@@ -106,7 +98,7 @@ class Study(EntityWithTimestamp):
         self.citation = citation
     
     def to_dict(self) -> dict:
-        data = self._to_dict_base()
+        data = self._base_dict()  # Using BaseEntity method
         data.update({
             "citation": self.citation
         })
@@ -155,7 +147,7 @@ class Dataset(EntityWithTimestamp, TextSearchable):
         ])
     
     def to_dict(self) -> dict:
-        data = self._to_dict_base()
+        data = self._base_dict()  # Using BaseEntity method
         data.update({
             "name": self.name,
             "source": self.source,
@@ -183,7 +175,7 @@ class AccessRequest(EntityWithTimestamp):
         self.status = RequestStatus.PENDING.value
     
     def to_dict(self) -> dict:
-        data = self._to_dict_base()
+        data = self._base_dict()  # Using BaseEntity method
         data.update({
             "dataset_id": self.dataset_id,
             "user_id": self.user_id,
@@ -398,11 +390,11 @@ class QueryFilter(FilterStrategy):
         return self.query in dataset.get_searchable_text().lower()
 
 
-class DataDiscoveryService:
+class DataDiscoveryService(BaseService[DatasetRepository]):
     """Data Discovery Service - core business logic (DRY & SOLID)"""
     
     def __init__(self, repository: DatasetRepository):
-        self.repository = repository
+        super().__init__(repository)  # Leverage BaseService initialization
     
     # ========= HELPER METHODS (DRY - used by multiple search methods) =========
     
@@ -413,16 +405,8 @@ class DataDiscoveryService:
             datasets = [d for d in datasets if filter_strategy.apply(d)]
         return datasets
     
-    def _to_dict_list(self, datasets: List[Dataset]) -> List[Dict]:
-        """Convert datasets to dictionaries (DRY - reusable conversion)"""
-        return [d.to_dict() for d in datasets]
-    
-    def _validate_dataset_exists(self, dataset_id: str) -> Optional[Dataset]:
-        """Validate dataset exists and return it (DRY - reusable validation)"""
-        dataset = self.repository.get(dataset_id)
-        if not dataset:
-            raise ValueError(f"Dataset {dataset_id} not found")
-        return dataset
+    # Removed _to_dict_list - now using inherited method from BaseService
+    # Removed _validate_dataset_exists - now using _validate_entity_exists from BaseService
     
     # ========= PRIMARY SEARCH METHODS =========
     
@@ -500,24 +484,31 @@ class DataDiscoveryService:
         )
         
         if self.repository.find_duplicates(dataset.metadata_hash):
-            raise ValueError("Dataset appears to be duplicate")
+            raise DuplicateEntityException(
+                "Dataset",
+                dataset.name,
+                details={"hash": dataset.metadata_hash}
+            )
         
         created = self.repository.create(dataset)
         return created.to_dict()
     
     def add_study_to_dataset(self, dataset_id: str, citation: str) -> Dict:
-        """Add study to dataset (DRY - uses validation helper)"""
-        dataset = self._validate_dataset_exists(dataset_id)
+        """Add study to dataset (DRY - uses validation helper from BaseService)"""
+        dataset = self._validate_entity_exists(dataset_id, "Dataset")
         dataset.add_study(Study(citation))
         return dataset.to_dict()
     
     def request_dataset_access(self, dataset_id: str, user_id: str, 
                               reason: str, contact_email: str) -> Dict:
-        """Request access to dataset (DRY - uses validation helper)"""
-        dataset = self._validate_dataset_exists(dataset_id)
+        """Request access to dataset (DRY - uses validation helper from BaseService)"""
+        dataset = self._validate_entity_exists(dataset_id, "Dataset")
         
         if dataset.access_type != AccessType.FORMAL_REQUEST.value:
-            raise ValueError("Dataset does not require formal access request")
+            raise ValidationException(
+                "Dataset does not require formal access request",
+                details={"dataset_id": dataset_id, "access_type": dataset.access_type}
+            )
         
         access_request = AccessRequest(dataset_id, user_id, reason, contact_email)
         created = self.repository.create_access_request(access_request)

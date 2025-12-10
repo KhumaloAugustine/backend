@@ -14,6 +14,8 @@ from typing import List, Optional, Dict, Any
 from enum import Enum
 import uuid
 
+from harmony_api.services.base_service import BaseRepository, BaseService, BaseEntity
+
 
 # ============================================================================
 # MODELS
@@ -175,11 +177,11 @@ class AnalyticsRepository:
 # BUSINESS LOGIC LAYER
 # ============================================================================
 
-class AnalyticsService:
+class AnalyticsService(BaseService[AnalyticsRepository]):
     """Analytics/Reporting Service - Core business logic"""
     
     def __init__(self, repository: AnalyticsRepository):
-        self.repository = repository
+        super().__init__(repository)  # Leverage BaseService
     
     def get_researcher_dashboard(self, user_id: str) -> Optional[Dict]:
         """Get researcher dashboard with harmonisation matrices"""

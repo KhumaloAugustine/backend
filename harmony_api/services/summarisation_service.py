@@ -14,6 +14,9 @@ from typing import List, Optional, Dict, Any
 from enum import Enum
 import uuid
 
+from harmony_api.services.base_service import BaseRepository, BaseService, BaseEntity
+from harmony_api.core.exceptions import EntityNotFoundException
+
 
 # ============================================================================
 # MODELS
@@ -150,11 +153,11 @@ class SummarisationRepository:
 # BUSINESS LOGIC LAYER
 # ============================================================================
 
-class SummarisationService:
+class SummarisationService(BaseService[SummarisationRepository]):
     """Summarisation Service - Core business logic"""
     
     def __init__(self, repository: SummarisationRepository):
-        self.repository = repository
+        super().__init__(repository)  # Leverage BaseService
         self.nlp_model = None  # Placeholder for actual LLM/NLP model
     
     def initiate_summarisation(self, study_id: str, study_title: str, 
