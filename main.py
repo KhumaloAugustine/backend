@@ -48,6 +48,7 @@ from harmony_api.routers.data_discovery_router import router as data_discovery_r
 from harmony_api.routers.data_harmonisation_router import router as data_harmonisation_router
 from harmony_api.routers.summarisation_router import router as summarisation_router
 from harmony_api.routers.analytics_router import router as analytics_router
+from harmony_api.routers.metadata_router import router as metadata_router
 from harmony_api.services.instruments_cache import InstrumentsCache
 from harmony_api.scheduler import scheduler
 from harmony_api.services.vectors_cache import VectorsCache
@@ -107,6 +108,7 @@ app_fastapi.include_router(health_check_router, tags=["Health Check"])
 app_fastapi.include_router(text_router, tags=["Text"])
 app_fastapi.include_router(info_router, tags=["Info"])
 app_fastapi.include_router(data_discovery_router, tags=["Data Discovery"])
+app_fastapi.include_router(metadata_router, tags=["Metadata Harmonization"])
 app_fastapi.include_router(data_harmonisation_router, tags=["Data Harmonisation"])
 app_fastapi.include_router(summarisation_router, tags=["Summarisation"])
 app_fastapi.include_router(analytics_router, tags=["Analytics"])
@@ -116,6 +118,21 @@ async def main():
     # Load cache
     InstrumentsCache()
     VectorsCache()
+
+    # Load metadata
+    from harmony_api.services.metadata_harmonizer import get_harmonizer
+    from harmony_api.services.metadata_loader import MetadataLoader
+
+    harmonizer = get_harmonizer()
+    loader = MetadataLoader(harmonizer)
+
+    # Load SAPRIN metadata
+    try:
+        load_results = loader.load_saprin_metadata()
+        print("INFO:\t  Metadata loaded successfully")
+        print(f"INFO:\t  Loaded sources: {loader.get_loaded_sources()}")
+    except Exception as e:
+        print(f"WARNING:\t Error loading metadata: {str(e)}")
 
     server = uvicorn.Server(
         config=uvicorn.Config(
