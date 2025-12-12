@@ -143,6 +143,7 @@ class MetadataLoader:
         results = {
             "saprin_2022": False,
             "saprin_2024": False,
+            "other_sources": {},
             "details": {}
         }
 
@@ -218,6 +219,18 @@ class MetadataLoader:
             source_url="https://saprindata.samrc.ac.za/index.php/metadata/export/87/json"
         )
         results["details"]["saprin_2024"] = "Loaded SAPRIN 2024 Mental Health Datasets"
+
+        # Load metadata from metadata_sources directory
+        metadata_dir = Path(__file__).parent.parent.parent / "metadata_sources"
+        if metadata_dir.exists():
+            dir_results = self.load_from_directory(
+                str(metadata_dir),
+                pattern="*.json"
+            )
+            results["other_sources"] = dir_results
+            for file_path, success in dir_results.items():
+                if success:
+                    results["details"][file_path] = f"Successfully loaded {file_path}"
 
         return results
 

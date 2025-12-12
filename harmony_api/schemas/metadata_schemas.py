@@ -73,9 +73,16 @@ class FundingAgencySchema(BaseModel):
 
 class KeywordSchema(BaseModel):
     """Schema for keywords/topics"""
-    keyword: str
+    keyword: Optional[str] = None
+    topic: Optional[str] = None
     vocab: Optional[str] = None
     uri: Optional[str] = None
+    
+    def __init__(self, **data):
+        """Allow both 'keyword' and 'topic' fields, preferring 'keyword' if both present"""
+        if 'topic' in data and 'keyword' not in data:
+            data['keyword'] = data.pop('topic')
+        super().__init__(**data)
 
 
 class DocumentDescriptionSchema(BaseModel):

@@ -125,9 +125,9 @@ class MetadataHarmonizer:
             # Parse the metadata
             metadata = MetadataSchema(**raw_metadata)
 
-            # Extract document description
-            doc_desc = metadata.doc_desc or {}
-            study_desc = metadata.study_desc or {}
+            # Extract document description - convert to dict for easier access
+            doc_desc = metadata.doc_desc.model_dump() if metadata.doc_desc else {}
+            study_desc = metadata.study_desc.model_dump() if metadata.study_desc else {}
 
             # Generate source ID
             source_id = self._generate_source_id(source_name, study_desc)

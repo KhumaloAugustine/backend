@@ -20,6 +20,49 @@ service = create_summarisation_service()
 
 
 @router.post(
+    path="",
+    status_code=status.HTTP_200_OK,
+    summary="Generate study summary (quick endpoint)"
+)
+async def generate_summary(
+    text: str = Body(..., description="Text or study abstract to summarize"),
+    style: str = Body("brief", description="Summarization style: brief, detailed, or academic"),
+    study_title: str = Body(None, description="Optional study title"),
+    study_id: str = Body(None, description="Optional study ID")
+):
+    """Generate a plain-language summary of research text."""
+    try:
+        # Create a summary entry
+        summary = service.initiate_summarisation(
+            study_id=study_id or "auto_" + str(datetime.now().timestamp()),
+            study_title=study_title or "Untitled",
+            study_abstract=text
+        )
+        
+        if not summary:
+            return {"error": "Could not create summary"}, status.HTTP_400_BAD_REQUEST
+        
+        # Generate draft automatically
+        version = service.generate_draft_summary(summary.id)
+        
+        if not version:
+            return {"error": "Could not generate summary"}, status.HTTP_500_INTERNAL_SERVER_ERROR
+        
+        return {
+            "success": True,
+            "summary_id": summary.id,
+            "study_id": summary.study_id,
+            "study_title": summary.study_title,
+            "plain_language_summary": version.plain_language_text,
+            "style": style,
+            "status": "generated",
+            "created_at": summary.created_at.isoformat()
+        }
+    except Exception as e:
+        return {"error": f"Error generating summary: {str(e)}"}, status.HTTP_500_INTERNAL_SERVER_ERROR
+
+
+@router.post(
     path="/initiate",
     status_code=status.HTTP_201_CREATED,
     summary="Initiate study summarisation"

@@ -53,6 +53,10 @@ class DevSettings(Settings):
     RELOAD: bool = Field(description="Reload.", default=True)
     CORS: dict = Field(description="CORS.", default={
         "origins": [
+            "http://localhost:5173",
+            "http://localhost:5174",
+            "http://127.0.0.1:5173",
+            "http://127.0.0.1:5174",
             "*",
         ],
         "allow_credentials": True,
@@ -65,10 +69,14 @@ class ProdSettings(Settings):
     # TODO change
     SERVER_HOST: str = Field(description="Host.", default="0.0.0.0")
     DEBUG: bool = Field(description="Debug.", default=False)
-    PORT: int = Field(description="Port.", default=8000)
+    PORT: int = Field(description="Port.", default=8001)
     RELOAD: bool = Field(description="Reload.", default=False)
     CORS: dict = Field(description="CORS.", default={
         "origins": [
+            "http://localhost:5173",
+            "http://localhost:5174",
+            "http://127.0.0.1:5173",
+            "http://127.0.0.1:5174",
             "*",
         ],
         "allow_credentials": True,
