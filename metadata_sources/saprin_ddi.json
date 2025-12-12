@@ -1,0 +1,61 @@
+{
+  "doc_desc": {
+    "title": "SAPRIN DDI Documentation - Comprehensive Metadata",
+    "idno": "DDI.SAPRIN.DDI.DOC.V1",
+    "producers": [
+      {
+        "name": "SAPRIN Network",
+        "abbr": "SAPRIN",
+        "affiliation": "South African Population Research Infrastructure Network",
+        "role": "Data Documentation"
+      },
+      {
+        "name": "South African Medical Research Council",
+        "abbr": "SAMRC",
+        "affiliation": "South African Department of Health",
+        "role": "Institutional Support"
+      }
+    ],
+    "prod_date": "2024-01-01",
+    "version_statement": {
+      "version": "DDI Standard Documentation",
+      "version_notes": "Complete DDI-formatted documentation of SAPRIN datasets for international data discovery"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "SAPRIN.DDI.DOC",
+      "title": "SAPRIN Data Documentation - DDI Format"
+    },
+    "study_info": {
+      "keywords": [
+        {"keyword": "demographic surveillance"},
+        {"keyword": "health surveillance"},
+        {"keyword": "longitudinal data"},
+        {"keyword": "South Africa"},
+        {"keyword": "SAPRIN network"}
+      ],
+      "topics": [
+        {"topic": "demography"},
+        {"topic": "epidemiology"},
+        {"topic": "public health"},
+        {"topic": "health surveillance"}
+      ],
+      "abstract": "Complete DDI-formatted documentation of SAPRIN network studies including demographic and health surveillance data collected across multiple SAPRIN Demographic Surveillance Sites (DSS) in South Africa. This metadata provides comprehensive information for data discovery and harmonization.",
+      "time_periods": [
+        {"start": "1992-01-01", "end": "2024-12-31", "cycle": "Ongoing Surveillance"}
+      ],
+      "coll_dates": [
+        {"start": "1992-01-01", "end": "2024-12-31", "cycle": "Continuous Collection"}
+      ],
+      "nation": [
+        {"name": "South Africa", "abbreviation": "RSA"}
+      ],
+      "geog_coverage": "SAPRIN Network sites across multiple provinces including Agincourt, DIMAMO, AHRI, and other demographic surveillance sites",
+      "analysis_unit": "Households, individuals, and community-level aggregates",
+      "data_kind": "Longitudinal demographic and health surveillance data",
+      "universe": "Populations resident in SAPRIN DSS sites"
+    }
+  },
+  "schematype": "survey"
+}

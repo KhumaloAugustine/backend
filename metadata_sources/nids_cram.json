@@ -1,0 +1,75 @@
+{
+  "doc_desc": {
+    "title": "NIDS-CRAM Wave 1-5 Study",
+    "idno": "DDI.NIDS.CRAM.W1.5.V1",
+    "producers": [
+      {
+        "name": "Southern Africa Labour and Development Research Unit",
+        "abbr": "SALDRU",
+        "affiliation": "University of Cape Town",
+        "role": "Study Director"
+      },
+      {
+        "name": "Department of Economics",
+        "abbr": "UCT",
+        "affiliation": "University of Cape Town",
+        "role": "Principal Investigator"
+      },
+      {
+        "name": "Collaborative Research on African Mental Health",
+        "abbr": "CRAM",
+        "affiliation": "Pan-African Research Networks",
+        "role": "Collaborative Partner"
+      }
+    ],
+    "prod_date": "2024-06-30",
+    "version_statement": {
+      "version": "Wave 1-5 Multi-Wave Release",
+      "version_notes": "NIDS-CRAM combines NIDS longitudinal data with mental health modules across 5 waves"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "NIDS.CRAM.W1.5",
+      "title": "NIDS-CRAM Waves 1-5: National Income Dynamics Study with Mental Health Module"
+    },
+    "study_info": {
+      "keywords": [
+        {"keyword": "mental health"},
+        {"keyword": "depression"},
+        {"keyword": "anxiety"},
+        {"keyword": "psychosocial stress"},
+        {"keyword": "longitudinal"},
+        {"keyword": "South Africa"},
+        {"keyword": "household economics"},
+        {"keyword": "socioeconomic determinants of mental health"}
+      ],
+      "topics": [
+        {"topic": "mental health"},
+        {"topic": "public health"},
+        {"topic": "psychology"},
+        {"topic": "household economics"},
+        {"topic": "longitudinal research"}
+      ],
+      "abstract": "NIDS-CRAM integrates comprehensive mental health assessments into the NIDS longitudinal household survey across five waves (2020-2021). The study examines the relationship between socioeconomic factors and mental health outcomes in South Africa, including depression, anxiety, and psychological distress among household members.",
+      "time_periods": [
+        {"start": "2020-01-01", "end": "2021-12-31", "cycle": "Waves 1-5"}
+      ],
+      "coll_dates": [
+        {"start": "2020-02-15", "end": "2020-04-30", "cycle": "Wave 1 Pre-Lockdown"},
+        {"start": "2020-05-01", "end": "2020-08-31", "cycle": "Wave 2 Early Lockdown"},
+        {"start": "2020-09-01", "end": "2020-12-31", "cycle": "Wave 3 Mid-Lockdown"},
+        {"start": "2021-01-01", "end": "2021-06-30", "cycle": "Wave 4 Late Lockdown"},
+        {"start": "2021-07-01", "end": "2021-12-31", "cycle": "Wave 5 Recovery Phase"}
+      ],
+      "nation": [
+        {"name": "South Africa", "abbreviation": "RSA"}
+      ],
+      "geog_coverage": "Nationally representative NIDS sample with mental health module implemented across all nine provinces",
+      "analysis_unit": "Individual household members with mental health assessments",
+      "data_kind": "Longitudinal panel survey with mental health clinical scales",
+      "universe": "NIDS household members aged 18+ years assessed for mental health outcomes across COVID-19 pandemic waves"
+    }
+  },
+  "schematype": "survey"
+}

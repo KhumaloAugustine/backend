@@ -1,0 +1,81 @@
+{
+  "doc_desc": {
+    "title": "SAPRIN Mental Health Data Prize 2024 - Complete Datasets",
+    "idno": "DDI.SAPRIN.MHDATA.2024.V1",
+    "producers": [
+      {
+        "name": "SAPRIN Network",
+        "abbr": "SAPRIN",
+        "affiliation": "South African Population Research Infrastructure Network",
+        "role": "Data Producer and Coordinator"
+      },
+      {
+        "name": "Agincourt Health and socioeconomic Intervention Projects",
+        "abbr": "AHIP",
+        "affiliation": "University of the Witwatersrand",
+        "role": "Field Site Director"
+      },
+      {
+        "name": "DIMAMO",
+        "abbr": "DIMAMO",
+        "affiliation": "University of Cape Town",
+        "role": "Field Site Director"
+      },
+      {
+        "name": "Africa Health Research Institute",
+        "abbr": "AHRI",
+        "affiliation": "South African Medical Research Council",
+        "role": "Field Site Director"
+      }
+    ],
+    "prod_date": "2024-08-15",
+    "version_statement": {
+      "version": "1.0 - Complete 2024 Release",
+      "version_notes": "SAPRIN Mental Health Data Prize 2024 with harmonized mental health instruments across multiple sites and health conditions"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "SAPRIN.MHDATA.2024",
+      "title": "SAPRIN Mental Health Datasets 2024"
+    },
+    "study_info": {
+      "keywords": [
+        {"keyword": "mental health"},
+        {"keyword": "depression"},
+        {"keyword": "anxiety"},
+        {"keyword": "psychological assessment"},
+        {"keyword": "health surveillance"},
+        {"keyword": "South Africa"},
+        {"keyword": "demographic surveillance"},
+        {"keyword": "harmonized instruments"},
+        {"keyword": "epidemiology"},
+        {"keyword": "public health"},
+        {"keyword": "health conditions"}
+      ],
+      "topics": [
+        {"topic": "mental health epidemiology"},
+        {"topic": "public health"},
+        {"topic": "health surveillance"},
+        {"topic": "clinical assessment"},
+        {"topic": "health services"},
+        {"topic": "item harmonization"}
+      ],
+      "abstract": "SAPRIN Mental Health Data Prize 2024 contains comprehensive mental health data from SAPRIN Demographic Surveillance Sites including Agincourt, DIMAMO, and AHRI. Data includes harmonized mental health instruments, clinical assessments, health service utilization data, and health condition variables suitable for comparative mental health research across South African populations. Multiple datasets with harmonization-ready structure.",
+      "time_periods": [
+        {"start": "2020-01-01", "end": "2024-12-31", "cycle": "2024 Prize Year Data"}
+      ],
+      "coll_dates": [
+        {"start": "2020-01-01", "end": "2024-12-31", "cycle": "Data Collection Period"}
+      ],
+      "nation": [
+        {"name": "South Africa", "abbreviation": "RSA"}
+      ],
+      "geog_coverage": "SAPRIN network sites: Agincourt (Limpopo), DIMAMO (Limpopo), AHRI (KwaZulu-Natal)",
+      "analysis_unit": "Individuals with mental health assessments and health condition tracking",
+      "data_kind": "Cross-sectional and longitudinal mental health survey data with harmonized instruments (Zip format with data files)",
+      "universe": "Residents of SAPRIN demographic surveillance sites aged 15+ with mental health and health condition assessments"
+    }
+  },
+  "schematype": "survey"
+}

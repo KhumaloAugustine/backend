@@ -168,7 +168,8 @@ def convert_pdf_to_instruments(file: RawFile) -> Instrument:
             for answer_text_individual_line in answer_text.split("\n"):
                 # Split response options on line breaks
                 answer_text_individual_line = answer_text_individual_line.strip()
-                if len(answer_text_individual_line) > 0 and len(answer_texts[question_idx]) < 10:
+                # Check if question_idx is valid before accessing answer_texts
+                if question_idx < len(answer_texts) and len(answer_text_individual_line) > 0 and len(answer_texts[question_idx]) < 10:
                     answer_texts[question_idx].append(answer_text_individual_line)
 
         for answer_idx, this_block_of_answers in enumerate(answer_texts):

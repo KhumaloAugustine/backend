@@ -135,19 +135,24 @@ class MetadataLoader:
 
     def load_saprin_metadata(self) -> Dict[str, Any]:
         """
-        Load SAPRIN metadata from standard locations.
+        Load all metadata from configured sources including:
+        - Inline SAPRIN 2022/2024 datasets
+        - metadata_sources/ directory (all JSON files)
+        - Datasets/ directory (for harmonization data)
+        - Metadata/ documentation folder
 
         Returns:
-            Dict with loading results
+            Dict with loading results from all sources
         """
         results = {
-            "saprin_2022": False,
-            "saprin_2024": False,
-            "other_sources": {},
+            "saprin_inline": {},
+            "metadata_sources": {},
+            "datasets_directory": {},
+            "metadata_folder": {},
             "details": {}
         }
 
-        # SAPRIN 2022 Mental Health Data Prize
+        # ====== LOAD INLINE SAPRIN DATASETS ======
         saprin_2022_json = """{
   "doc_desc": {
     "title": "SAPRIN Mental Health Data Prize 2022",
@@ -176,7 +181,6 @@ class MetadataLoader:
   "schematype": "survey"
 }"""
 
-        # SAPRIN 2024 Mental Health Datasets
         saprin_2024_json = """{
   "doc_desc": {
     "title": "SAPRIN Mental Health Datasets 2024",
@@ -205,32 +209,46 @@ class MetadataLoader:
   "schematype": "survey"
 }"""
 
-        # Load both SAPRIN datasets
-        results["saprin_2022"] = self.load_from_json_string(
+        results["saprin_inline"]["saprin_2022"] = self.load_from_json_string(
             saprin_2022_json,
             source_name="SAPRIN Mental Health Data Prize 2022",
             source_url="https://saprindata.samrc.ac.za/index.php/metadata/export/80/json"
         )
         results["details"]["saprin_2022"] = "Loaded SAPRIN 2022 Mental Health Data Prize"
 
-        results["saprin_2024"] = self.load_from_json_string(
+        results["saprin_inline"]["saprin_2024"] = self.load_from_json_string(
             saprin_2024_json,
             source_name="SAPRIN Mental Health Datasets 2024",
             source_url="https://saprindata.samrc.ac.za/index.php/metadata/export/87/json"
         )
         results["details"]["saprin_2024"] = "Loaded SAPRIN 2024 Mental Health Datasets"
 
-        # Load metadata from metadata_sources directory
+        # ====== LOAD FROM metadata_sources/ DIRECTORY ======
         metadata_dir = Path(__file__).parent.parent.parent / "metadata_sources"
         if metadata_dir.exists():
-            dir_results = self.load_from_directory(
-                str(metadata_dir),
-                pattern="*.json"
-            )
-            results["other_sources"] = dir_results
+            dir_results = self.load_from_directory(str(metadata_dir), pattern="*.json")
+            results["metadata_sources"] = dir_results
             for file_path, success in dir_results.items():
                 if success:
-                    results["details"][file_path] = f"Successfully loaded {file_path}"
+                    results["details"][f"metadata_sources/{file_path}"] = "Loaded from metadata_sources"
+
+        # ====== LOAD FROM Datasets/ DIRECTORY (for harmonization) ======
+        datasets_dir = Path(__file__).parent.parent.parent / "Datasets"
+        if datasets_dir.exists():
+            dataset_metadata_results = self.load_from_directory(str(datasets_dir), pattern="*.json")
+            results["datasets_directory"] = dataset_metadata_results
+            for file_path, success in dataset_metadata_results.items():
+                if success:
+                    results["details"][f"Datasets/{file_path}"] = "Dataset metadata loaded"
+
+        # ====== LOAD FROM Metadata/ DOCUMENTATION FOLDER ======
+        metadata_folder = Path(__file__).parent.parent.parent / "Metadata"
+        if metadata_folder.exists():
+            folder_metadata_results = self.load_from_directory(str(metadata_folder), pattern="*.json")
+            results["metadata_folder"] = folder_metadata_results
+            for file_path, success in folder_metadata_results.items():
+                if success:
+                    results["details"][f"Metadata/{file_path}"] = "Metadata documentation loaded"
 
         return results
 

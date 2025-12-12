@@ -1,0 +1,71 @@
+{
+  "doc_desc": {
+    "title": "National Income Dynamics Study (NIDS) - Waves 1-5 Complete Dataset",
+    "idno": "DDI.NIDS.COMPLETE.2008.2017.V7",
+    "producers": [
+      {
+        "name": "Southern Africa Labour and Development Research Unit",
+        "abbr": "SALDRU",
+        "affiliation": "University of Cape Town",
+        "role": "Data Producer"
+      },
+      {
+        "name": "DataFirst",
+        "abbr": "DF",
+        "affiliation": "University of Cape Town",
+        "role": "Data Archive"
+      }
+    ],
+    "prod_date": "2023-12-15",
+    "version_statement": {
+      "version": "7.0 - Complete Multi-Wave",
+      "version_notes": "Full dataset with harmonized mental health variables across all waves (Stata format)"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "NIDS.COMPLETE.W1-5",
+      "title": "NIDS Complete Dataset Waves 1-5 (2008-2017)"
+    },
+    "study_info": {
+      "keywords": [
+        {"keyword": "income"},
+        {"keyword": "household"},
+        {"keyword": "employment"},
+        {"keyword": "education"},
+        {"keyword": "health"},
+        {"keyword": "longitudinal"},
+        {"keyword": "South Africa"},
+        {"keyword": "poverty"},
+        {"keyword": "mental health"},
+        {"keyword": "harmonized"}
+      ],
+      "topics": [
+        {"topic": "economics"},
+        {"topic": "labor"},
+        {"topic": "social welfare"},
+        {"topic": "public health"},
+        {"topic": "household surveys"}
+      ],
+      "abstract": "Complete NIDS dataset covering Waves 1-5 from 2008-2017 with harmonized variables. Contains individual-level and household-level data on income, employment, education, health, and social outcomes with enhanced mental health variables for harmonization across research instruments. Data available in Stata 14 format.",
+      "time_periods": [
+        {"start": "2008-01-01", "end": "2017-12-31", "cycle": "Waves 1-5"}
+      ],
+      "coll_dates": [
+        {"start": "2008-03-01", "end": "2009-06-30", "cycle": "Wave 1"},
+        {"start": "2010-09-01", "end": "2011-06-30", "cycle": "Wave 2"},
+        {"start": "2012-09-01", "end": "2013-06-30", "cycle": "Wave 3"},
+        {"start": "2014-10-01", "end": "2015-09-30", "cycle": "Wave 4"},
+        {"start": "2017-10-01", "end": "2018-11-30", "cycle": "Wave 5"}
+      ],
+      "nation": [
+        {"name": "South Africa", "abbreviation": "RSA"}
+      ],
+      "geog_coverage": "Nationally representative covering all 9 provinces with urban and rural representation",
+      "analysis_unit": "Households and individuals",
+      "data_kind": "Longitudinal panel survey in Stata format",
+      "universe": "Household members aged 15+ across South Africa tracked over 9 years"
+    }
+  },
+  "schematype": "survey"
+}

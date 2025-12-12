@@ -178,14 +178,23 @@ def parse_instruments(
 
     # Get instruments that aren't cached yet and cache them
     for file_with_no_cached_instruments in files_with_no_cached_instruments:
-        new_instruments = convert_files_to_instruments(
-            [file_with_no_cached_instruments]
-        )
-        instrument_key = instruments_cache.generate_key(
-            file_with_no_cached_instruments.content
-        )
-        instruments_cache.set(instrument_key, new_instruments)
-        instruments.extend(new_instruments)
+        try:
+            new_instruments = convert_files_to_instruments(
+                [file_with_no_cached_instruments]
+            )
+            instrument_key = instruments_cache.generate_key(
+                file_with_no_cached_instruments.content
+            )
+            instruments_cache.set(instrument_key, new_instruments)
+            instruments.extend(new_instruments)
+        except IndexError as e:
+            raise http_exceptions.CouldNotProcessRequestHTTPException(
+                f"Error parsing document '{file_with_no_cached_instruments.file_name}': The document format may be invalid or corrupted. Please check the file and try again. Details: {str(e)}"
+            )
+        except Exception as e:
+            raise http_exceptions.CouldNotProcessRequestHTTPException(
+                f"Error parsing document '{file_with_no_cached_instruments.file_name}': {str(e)}"
+            )
 
     return instruments
 
