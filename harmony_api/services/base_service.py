@@ -10,7 +10,7 @@ Lead Developer: Augustine Khumalo
 """
 
 from abc import ABC, abstractmethod
-from typing import Any, Dict, List, Optional, TypeVar, Generic
+from typing import Any, Dict, List, Optional, TypeVar, Generic, Callable
 from datetime import datetime
 import uuid
 
