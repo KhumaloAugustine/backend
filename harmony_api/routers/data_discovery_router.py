@@ -143,8 +143,42 @@ async def get_dataset_details_endpoint(dataset_id: str) -> Dict:
     - All linked studies
     - Access information
     - Contact details
+    
+    Also retrieves mental health studies by their study ID.
     """
-    return get_dataset_or_404(dataset_id)
+    # First try to get as a regular dataset
+    details = service.get_dataset_details(dataset_id)
+    if details:
+        return details
+    
+    # If not found, try to get as a mental health study
+    studies_loader.load_all_studies()
+    study = studies_loader.get_study(dataset_id)
+    
+    if study:
+        # Convert mental health study to dataset format
+        study_dict = study.to_dict()
+        return {
+            "id": study_dict["study_id"],
+            "name": study_dict["title"],
+            "description": study_dict["abstract"],
+            "source": ", ".join([p.get("name", "") for p in study_dict["producers"]]) if study_dict["producers"] else "Research Institution",
+            "constructs": study_dict.get("keywords", []),
+            "instrument": "Observational/Research Data",
+            "access_type": "Research Database",
+            "status": "approved",
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat(),
+            "studies": [],
+            "study_count": 0,
+            "access_url": None,
+            "request_email": None,
+            "is_research_study": True,
+            "metadata": study_dict
+        }
+    
+    # Not found as either dataset or study
+    raise EntityNotFoundException("Dataset or Study", dataset_id)
 
 
 # ============================================================================
