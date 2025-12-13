@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Prevalence and factors associated with depressive symptoms among young women and men in the Eastern Cape Province, South Africa.",
+    "idno": "DDI.MH.2013.NDUNA,M.,",
+    "producers": [
+      {
+        "name": "Nduna",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "M.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "et al.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2013-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2013.NDUNA",
+      "title": "Prevalence and factors associated with depressive symptoms among young women and men in the Eastern Cape Province, South Africa."
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (community-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Prevalence and factors associated with depressive symptoms among young women and men in the Eastern Cape Province, South Africa.",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Eastern Cape",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (community-based) - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

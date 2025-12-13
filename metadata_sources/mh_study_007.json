@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Mental and physical health of out of school children in a South African township. ",
+    "idno": "DDI.MH.2002.LIANG,H.,",
+    "producers": [
+      {
+        "name": "Liang",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "H.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "A.J. Flisher",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2002-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2002.LIANG",
+      "title": "Mental and physical health of out of school children in a South African township. "
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (community-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Mental and physical health of out of school children in a South African township. ",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Western Cape",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (community-based) - Self-report &  Observation"
+    }
+  },
+  "schematype": "survey"
+}

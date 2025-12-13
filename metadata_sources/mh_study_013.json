@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Screen Time and Mental Health Among Adolescents: Implications of the Rise in Digital Environment in South Africa. ",
+    "idno": "DDI.MH.2022.RANJIT,K.",
+    "producers": [
+      {
+        "name": "Ranjit",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "K.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "et al.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2022-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2022.RANJI",
+      "title": "Screen Time and Mental Health Among Adolescents: Implications of the Rise in Digital Environment in South Africa. "
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (school-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Screen Time and Mental Health Among Adolescents: Implications of the Rise in Digital Environment in South Africa. ",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "KwaZulu-Natal",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (school-based) - Self-report & Observation"
+    }
+  },
+  "schematype": "survey"
+}

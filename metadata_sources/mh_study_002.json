@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Substance use and depressive and anxiety symptoms among out-of-school adolescent girls and young women in Cape Town, South Africa",
+    "idno": "DDI.MH.2021.CPBONNER",
+    "producers": [
+      {
+        "name": "C P Bonner",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "T Carney",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "F A Browne",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2021-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from Not clear, but started 2016"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2021.C P B",
+      "title": "Substance use and depressive and anxiety symptoms among out-of-school adolescent girls and young women in Cape Town, South Africa"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Community-based clusters from Cape Town (Young Women\u2019s Health CoOp in Cape Town Study)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Substance use and depressive and anxiety symptoms among out-of-school adolescent girls and young women in Cape Town, South Africa",
+      "time_periods": [
+        {
+          "start": "Not clear, but started 2016",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Not clear, but started 2016",
+          "end": "Not clear, but started 2016"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Cape Town",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Community-based clusters from Cape Town (Young Women\u2019s Health CoOp in Cape Town Study) - "
+    }
+  },
+  "schematype": "survey"
+}

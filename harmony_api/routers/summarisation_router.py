@@ -12,11 +12,13 @@ from fastapi import APIRouter, Body, status, Query
 from datetime import datetime
 
 from harmony_api.services.summarisation_service import create_summarisation_service
+from harmony_api.services.mental_health_studies_loader import get_mental_health_studies_loader
 
 router = APIRouter(prefix="/summarise", tags=["Summarisation"])
 
-# Service instance
+# Service instances
 service = create_summarisation_service()
+studies_loader = get_mental_health_studies_loader()
 
 
 @router.post(
@@ -248,4 +250,199 @@ async def health_check():
         "service": "summarisation",
         "status": "healthy",
         "timestamp": str(datetime.now())
+    }
+
+
+@router.get(
+    path="/available-studies",
+    summary="List available studies for summarization",
+    description="Get all available studies (both research studies and datasets) for summarization"
+)
+async def get_available_studies(
+    limit: int = Query(100, ge=1, le=500, description="Maximum results to return"),
+    search: str = Query(None, description="Optional search term")
+):
+    """
+    List all available studies for summarization including:
+    - Mental health research studies from metadata sources
+    - Research datasets already in the system
+    """
+    try:
+        # Load mental health studies
+        studies_loader.load_all_studies()
+        all_studies = studies_loader.get_all_studies()
+        
+        # Filter by search if provided
+        if search:
+            all_studies = [s for s in all_studies if search.lower() in s.get_searchable_text().lower()]
+        
+        # Limit results
+        all_studies = all_studies[:limit]
+        
+        # Convert to response format
+        studies = []
+        for study in all_studies:
+            studies.append({
+                "study_id": study.study_id,
+                "title": study.title,
+                "abstract": study.abstract[:300] + "..." if len(study.abstract) > 300 else study.abstract,
+                "keywords": study.keywords,
+                "producers": [p.get("name", "") for p in study.producers] if study.producers else [],
+                "date": study.prod_date,
+                "type": "research_study"
+            })
+        
+        return {
+            "count": len(studies),
+            "total_available": len(all_studies),
+            "studies": studies
+        }
+    except Exception as e:
+        return {
+            "count": 0,
+            "total_available": 0,
+            "studies": [],
+            "error": str(e)
+        }, status.HTTP_200_OK
+
+
+# ============================================================================
+# MENTAL HEALTH STUDIES SUMMARISATION - INTEGRATED
+# ============================================================================
+
+@router.get(
+    path="/studies/{study_id}/abstract",
+    summary="Get study abstract summary",
+    description="Get the abstract for a mental health study"
+)
+async def get_study_abstract(study_id: str):
+    """Get the abstract from a mental health study loaded from scoping review."""
+    study = studies_loader.get_study(study_id)
+    
+    if not study:
+        return {"error": f"Study {study_id} not found"}, status.HTTP_404_NOT_FOUND
+    
+    return {
+        "study_id": study_id,
+        "title": study.title,
+        "abstract": study.abstract,
+        "keywords": study.keywords,
+        "date": study.prod_date
+    }
+
+
+@router.post(
+    path="/studies/{study_id}/summarize",
+    status_code=status.HTTP_200_OK,
+    summary="Generate plain-language summary for mental health study"
+)
+async def summarize_study(
+    study_id: str,
+    style: str = Body("brief", description="Summarization style: brief, detailed, or academic")
+):
+    """
+    Generate a plain-language summary of a mental health study.
+    
+    Parameters:
+    - study_id: ID of the mental health study (e.g., mh_study_000)
+    - style: Summary style (brief, detailed, academic)
+    
+    Uses the study's abstract and metadata to create an accessible summary.
+    """
+    study = studies_loader.get_study(study_id)
+    
+    if not study:
+        return {"error": f"Study {study_id} not found"}, status.HTTP_404_NOT_FOUND
+    
+    try:
+        # Create a summary entry from the study
+        summary = service.initiate_summarisation(
+            study_id=study_id,
+            study_title=study.title,
+            study_abstract=study.abstract
+        )
+        
+        if not summary:
+            return {"error": "Could not create summary"}, status.HTTP_400_BAD_REQUEST
+        
+        # Generate draft automatically
+        version = service.generate_draft_summary(summary.id)
+        
+        if not version:
+            return {"error": "Could not generate summary"}, status.HTTP_500_INTERNAL_SERVER_ERROR
+        
+        return {
+            "success": True,
+            "summary_id": summary.id,
+            "study_id": study_id,
+            "study_title": study.title,
+            "plain_language_summary": version.plain_language_text,
+            "style": style,
+            "status": "generated",
+            "keywords": study.keywords,
+            "created_at": summary.created_at.isoformat()
+        }
+    except Exception as e:
+        return {"error": f"Error generating summary: {str(e)}"}, status.HTTP_500_INTERNAL_SERVER_ERROR
+
+
+@router.get(
+    path="/studies/bulk/summaries",
+    summary="Get summaries for multiple mental health studies",
+    description="Batch retrieve abstracts/summaries for multiple studies"
+)
+async def get_studies_summaries(
+    limit: int = Query(20, ge=1, le=100, description="Maximum studies to return")
+):
+    """
+    Get summaries for all mental health studies with their abstracts and metadata.
+    Useful for batch processing and overview.
+    """
+    all_studies = studies_loader.get_all_studies()[:limit]
+    
+    summaries = []
+    for study in all_studies:
+        summaries.append({
+            "study_id": study.study_id,
+            "title": study.title,
+            "abstract": study.abstract[:200] + "..." if len(study.abstract) > 200 else study.abstract,
+            "keywords": study.keywords,
+            "date": study.prod_date,
+            "producers": [p.get("name", "") for p in study.producers]
+        })
+    
+    return {
+        "count": len(summaries),
+        "studies": summaries
+    }
+
+
+@router.post(
+    path="/studies/search/by-construct/{construct}",
+    status_code=status.HTTP_200_OK,
+    summary="Search and summarize studies by construct"
+)
+async def search_and_summarize_by_construct(
+    construct: str,
+    limit: int = Query(10, ge=1, le=50, description="Maximum results")
+):
+    """
+    Find mental health studies related to a specific construct and get their summaries.
+    Combines discovery and summarization.
+    """
+    studies = studies_loader.get_studies_by_construct(construct)[:limit]
+    
+    summaries = []
+    for study in studies:
+        summaries.append({
+            "study_id": study.study_id,
+            "title": study.title,
+            "abstract": study.abstract[:150] + "..." if len(study.abstract) > 150 else study.abstract,
+            "keywords": [kw for kw in study.keywords if construct.lower() in kw.lower()]
+        })
+    
+    return {
+        "construct": construct,
+        "count": len(summaries),
+        "studies": summaries
     }

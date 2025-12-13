@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Rural-urban differences in the prevalence and predictors of depression among adolescents in South Africa",
+    "idno": "DDI.MH.2018.AJAERO,C.",
+    "producers": [
+      {
+        "name": "Ajaero",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "C.K.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "C.T. Nzeadibe",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2018-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from 2014"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2018.AJAER",
+      "title": "Rural-urban differences in the prevalence and predictors of depression among adolescents in South Africa"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (community-based) from National Income DynamicsStudy (NIDS)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Rural-urban differences in the prevalence and predictors of depression among adolescents in South Africa",
+      "time_periods": [
+        {
+          "start": "2014",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "2014",
+          "end": "2014"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "National",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (community-based) from National Income DynamicsStudy (NIDS) - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

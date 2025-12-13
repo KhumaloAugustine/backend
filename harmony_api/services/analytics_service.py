@@ -13,6 +13,7 @@ from datetime import datetime, timedelta
 from typing import List, Optional, Dict, Any
 from enum import Enum
 import uuid
+from harmony_api.services.mental_health_studies_loader import get_mental_health_studies_loader
 
 
 # ============================================================================
@@ -180,6 +181,8 @@ class AnalyticsService:
     
     def __init__(self, repository: AnalyticsRepository):
         self.repository = repository
+        self.studies_loader = get_mental_health_studies_loader()
+        self.studies_loader.load_all_studies()  # Load studies on initialization
     
     def get_researcher_dashboard(self, user_id: str) -> Optional[Dict]:
         """Get researcher dashboard with harmonisation matrices"""
@@ -291,12 +294,29 @@ class AnalyticsService:
         return trails
     
     def _get_topic_summaries(self, region: str = None) -> Dict:
-        """Get topic summaries for region"""
-        return {
-            "mental_health": {"coverage": 85, "studies": 142},
-            "well_being": {"coverage": 72, "studies": 98},
-            "depression": {"coverage": 91, "studies": 156}
+        """Get topic summaries for region based on mental health studies"""
+        # Get all studies and their constructs
+        all_studies = self.studies_loader.get_all_studies()
+        all_constructs = self.studies_loader.get_all_constructs()
+        
+        # Count studies by construct
+        topic_summaries = {}
+        for construct in all_constructs:
+            studies_with_construct = self.studies_loader.get_studies_by_construct(construct)
+            topic_summaries[construct.lower().replace(" ", "_")] = {
+                "name": construct,
+                "coverage": 85 if len(studies_with_construct) > 5 else 45,
+                "studies": len(studies_with_construct)
+            }
+        
+        # Add overall mental health summary
+        topic_summaries["mental_health_overall"] = {
+            "name": "Mental Health",
+            "coverage": 85,
+            "studies": len(all_studies)
         }
+        
+        return topic_summaries
     
     def _get_population_trends(self, region: str = None) -> Dict:
         """Get population trends for region"""
@@ -315,12 +335,20 @@ class AnalyticsService:
         }
     
     def _get_evidence_coverage(self, policy_area: str = None) -> Dict:
-        """Get evidence coverage for policy areas"""
-        return {
-            "maternal_health": 78,
-            "child_health": 65,
-            "adult_mental_health": 88
-        }
+        """Get evidence coverage for policy areas based on mental health studies"""
+        all_studies = self.studies_loader.get_all_studies()
+        all_constructs = self.studies_loader.get_all_constructs()
+        
+        # Calculate coverage based on studies per construct
+        coverage = {}
+        for construct in list(all_constructs)[:10]:  # Top 10 constructs
+            studies_count = len(self.studies_loader.get_studies_by_construct(construct))
+            coverage[construct] = min(88, 45 + (studies_count * 3))  # Scale based on study count
+        
+        # Add overall coverage
+        coverage["overall_mental_health"] = 88
+        
+        return coverage
     
     def _get_coverage_maps(self, policy_area: str = None) -> Dict:
         """Get coverage maps"""
@@ -348,22 +376,39 @@ class AnalyticsService:
         }
     
     def _get_user_statistics(self) -> Dict:
-        """Get user statistics"""
+        """Get user statistics including mental health studies coverage"""
+        all_studies = self.studies_loader.get_all_studies()
+        all_constructs = self.studies_loader.get_all_constructs()
+        
         return {
             "total_users": 450,
             "researchers": 200,
             "local_experts": 120,
             "policymakers": 80,
             "administrators": 50,
-            "active_today": 156
+            "active_today": 156,
+            "mental_health_studies_loaded": len(all_studies),
+            "mental_health_constructs_covered": len(all_constructs)
         }
     
     def _get_data_quality_scores(self) -> Dict:
-        """Get data quality scores"""
+        """Get data quality scores including studies metadata completeness"""
+        all_studies = self.studies_loader.get_all_studies()
+        
+        # Calculate metadata completeness for studies
+        complete_studies = 0
+        for study in all_studies:
+            if study.title and study.abstract and study.producers and study.keywords:
+                complete_studies += 1
+        
+        studies_metadata_completeness = (complete_studies / len(all_studies) * 100) if all_studies else 0
+        
         return {
             "metadata_completeness": 92,
             "schema_compliance": 88,
             "url_validity": 95,
+            "studies_metadata_completeness": round(studies_metadata_completeness, 1),
+            "total_studies": len(all_studies),
             "duplicate_records": 2
         }
 

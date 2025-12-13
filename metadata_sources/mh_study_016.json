@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Experiences and Perceived Benefits of a Youth Skateboarding Program in South Africa: From the Physical to Emotional and Beyond. ",
+    "idno": "DDI.MH.2024.SORSDAHL,",
+    "producers": [
+      {
+        "name": "Sorsdahl",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "K.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "Davies",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2024-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2024.SORSD",
+      "title": "Experiences and Perceived Benefits of a Youth Skateboarding Program in South Africa: From the Physical to Emotional and Beyond. "
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (school-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Experiences and Perceived Benefits of a Youth Skateboarding Program in South Africa: From the Physical to Emotional and Beyond. ",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Western Cape",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (school-based) - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

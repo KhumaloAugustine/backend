@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Distress, desperation and despair: anxiety, depression and suicidality among rural South African youth. ",
+    "idno": "DDI.MH.2021.MNGOMA,N.",
+    "producers": [
+      {
+        "name": "Mngoma",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "N.F.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "et al.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2021-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2021.MNGOM",
+      "title": "Distress, desperation and despair: anxiety, depression and suicidality among rural South African youth. "
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (community-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Distress, desperation and despair: anxiety, depression and suicidality among rural South African youth. ",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "KwaZulu-Natal",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (community-based) - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

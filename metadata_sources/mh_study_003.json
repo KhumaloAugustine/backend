@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Childhood psychological problems in school settings in rural Southern Africa.",
+    "idno": "DDI.MH.2013.CORTINA,M",
+    "producers": [
+      {
+        "name": "Cortina",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "M.A.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "et al.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2013-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2013.CORTI",
+      "title": "Childhood psychological problems in school settings in rural Southern Africa."
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (school-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Childhood psychological problems in school settings in rural Southern Africa.",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Mpumalanga",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (school-based) - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "High prevalence of depression symptomology among adolescents in Soweto, South Africa associated with being female and cofactors relating to HIV transmission",
+    "idno": "DDI.MH.2016.BERNARDBA",
+    "producers": [
+      {
+        "name": "Bernard Barhafumwa",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "Janan Dietrich",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "Kalysha Closson",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2016-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from March 2010\u20132012"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2016.BERNA",
+      "title": "High prevalence of depression symptomology among adolescents in Soweto, South Africa associated with being female and cofactors relating to HIV transmission"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Botsha Bophelo Adolescent Health Study (BBAHS) "
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "High prevalence of depression symptomology among adolescents in Soweto, South Africa associated with being female and cofactors relating to HIV transmission",
+      "time_periods": [
+        {
+          "start": "March 2010\u20132012",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "March 2010\u20132012",
+          "end": "March 2010\u20132012"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "HIV endemic urban township of Soweto, Johannesburg",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Botsha Bophelo Adolescent Health Study (BBAHS)  - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Psychometric properties of mental health screening tools in South African adolescent girls and young women",
+    "idno": "DDI.MH.2025.VIOLETAJ.",
+    "producers": [
+      {
+        "name": "Violeta J. Rodriguez",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "Erin Emerson",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "Millicent Atujuna",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2025-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from September 2019 to August 2023"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2025.VIOLE",
+      "title": "Psychometric properties of mental health screening tools in South African adolescent girls and young women"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": ""
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Psychometric properties of mental health screening tools in South African adolescent girls and young women",
+      "time_periods": [
+        {
+          "start": "September 2019 to August 2023",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "September 2019 to August 2023",
+          "end": "September 2019 to August 2023"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Cape Town",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": " - "
+    }
+  },
+  "schematype": "survey"
+}

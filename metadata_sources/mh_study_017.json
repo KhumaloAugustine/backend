@@ -1,0 +1,85 @@
+{
+  "doc_desc": {
+    "title": "The burden of depression and anxiety among medical students in South Africa: A cross-sectional survey at the University of Cape Town",
+    "idno": "DDI.MH.2020.SVANDER",
+    "producers": [
+      {
+        "name": "S van der Walt; W S Mabaso; E L Davids",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "P J de Vries",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2020-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from 5 to 19 October 2018"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2020.S VAN",
+      "title": "The burden of depression and anxiety among medical students in South Africa: A cross-sectional survey at the University of Cape Town"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Faculty of Health Sciences, University of Cape Town"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "The burden of depression and anxiety among medical students in South Africa: A cross-sectional survey at the University of Cape Town",
+      "time_periods": [
+        {
+          "start": "5 to 19 October 2018",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "5 to 19 October 2018",
+          "end": "5 to 19 October 2018"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Faculty of Health Sciences, University of Cape Town - "
+    }
+  },
+  "schematype": "survey"
+}

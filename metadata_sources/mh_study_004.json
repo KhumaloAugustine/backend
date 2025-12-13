@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Mental Health Inequalities in Adolescents Growing Up in Post-Apartheid South Africa: Cross-Sectional Survey, SHaW Study.",
+    "idno": "DDI.MH.2016.DAS-MUNSHI",
+    "producers": [
+      {
+        "name": "Das-Munshi",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "J.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      },
+      {
+        "name": "et al.",
+        "affiliation": "South Africa",
+        "role": "Researcher"
+      }
+    ],
+    "prod_date": "2016-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Data from "
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.2016.DAS-M",
+      "title": "Mental Health Inequalities in Adolescents Growing Up in Post-Apartheid South Africa: Cross-Sectional Survey, SHaW Study."
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "South Africa"
+        },
+        {
+          "keyword": "Survey (school-based)"
+        },
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychology"
+        },
+        {
+          "topic": "public health"
+        }
+      ],
+      "abstract": "Mental Health Inequalities in Adolescents Growing Up in Post-Apartheid South Africa: Cross-Sectional Survey, SHaW Study.",
+      "time_periods": [
+        {
+          "start": "2000-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "Unknown",
+          "end": "Unknown"
+        }
+      ],
+      "nation": [
+        {
+          "name": "South Africa",
+          "abbreviation": "RSA"
+        }
+      ],
+      "geog_coverage": "Western Cape",
+      "analysis_unit": "Individuals/Communities",
+      "data_kind": "Survey (school-based) - Self-report"
+    }
+  },
+  "schematype": "survey"
+}

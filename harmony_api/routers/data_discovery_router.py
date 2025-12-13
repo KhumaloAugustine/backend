@@ -27,11 +27,13 @@ from harmony_api.services.data_discovery_service import (
     DatasetStatus,
     AccessType
 )
+from harmony_api.services.mental_health_studies_loader import get_mental_health_studies_loader
 
 router = APIRouter(prefix="/discovery", tags=["Data Discovery"])
 
-# Service instance
+# Service instances
 service = create_data_discovery_service()
+studies_loader = get_mental_health_studies_loader()
 
 
 # ============================================================================
@@ -99,9 +101,40 @@ async def list_datasets() -> Dict:
     """
     Retrieve all approved datasets from the catalogue.
     Returns complete dataset information including constructs, instruments, and studies.
+    Also includes mental health studies from the metadata sources.
     """
     datasets = service.get_all_datasets()
-    return format_collection_response(datasets, "datasets")
+    
+    # Load mental health studies and convert to dataset-like format
+    studies_loader.load_all_studies()
+    mh_studies = studies_loader.get_all_studies()
+    
+    # Convert mental health studies to dataset format
+    converted_studies = []
+    for study in mh_studies:
+        study_dict = study.to_dict()
+        converted_study = {
+            "id": study_dict["study_id"],
+            "name": study_dict["title"],
+            "description": study_dict["abstract"],
+            "source": ", ".join([p.get("name", "") for p in study_dict["producers"]]) if study_dict["producers"] else "Research Institution",
+            "constructs": study_dict.get("keywords", []),
+            "instrument": "Observational/Research Data",
+            "access_type": "Research Database",
+            "status": "approved",
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat(),
+            "studies": [],
+            "study_count": 0,
+            "access_url": None,
+            "request_email": None,
+            "is_research_study": True
+        }
+        converted_studies.append(converted_study)
+    
+    # Combine datasets and converted studies
+    all_datasets = datasets + converted_studies
+    return format_collection_response(all_datasets, "datasets")
 
 
 @router.get(
@@ -147,10 +180,42 @@ async def global_search(
     - Access URLs
     - Contact emails
     
-    Returns only approved datasets.
+    Also searches mental health research studies from metadata sources.
+    Returns only approved datasets and studies.
     """
-    results = service.global_search(query)
-    return format_search_response(query, paginate_results(results, limit))
+    # Search existing datasets
+    dataset_results = service.global_search(query)
+    
+    # Search mental health studies
+    studies_loader.load_all_studies()
+    study_results = studies_loader.search_studies(query)
+    
+    # Convert study results to dataset format
+    converted_studies = []
+    for study in study_results:
+        study_dict = study.to_dict()
+        converted_study = {
+            "id": study_dict["study_id"],
+            "name": study_dict["title"],
+            "description": study_dict["abstract"],
+            "source": ", ".join([p.get("name", "") for p in study_dict["producers"]]) if study_dict["producers"] else "Research Institution",
+            "constructs": study_dict.get("keywords", []),
+            "instrument": "Observational/Research Data",
+            "access_type": "Research Database",
+            "status": "approved",
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat(),
+            "studies": [],
+            "study_count": 0,
+            "access_url": None,
+            "request_email": None,
+            "is_research_study": True
+        }
+        converted_studies.append(converted_study)
+    
+    # Combine results
+    combined_results = dataset_results + converted_studies
+    return format_search_response(query, paginate_results(combined_results, limit))
 
 
 @router.get(
@@ -162,10 +227,18 @@ async def global_search(
 async def get_constructs() -> Dict:
     """
     Retrieve all unique mental health constructs (disorders/conditions) 
-    that are represented in the dataset catalogue.
+    that are represented in the dataset catalogue and mental health studies.
     """
-    constructs = service.get_unique_constructs()
-    return format_collection_response(constructs, "constructs")
+    # Get constructs from datasets
+    dataset_constructs = service.get_unique_constructs()
+    
+    # Get constructs from mental health studies
+    studies_loader.load_all_studies()
+    study_constructs = list(studies_loader.get_all_constructs())
+    
+    # Combine and deduplicate
+    all_constructs = list(set(dataset_constructs + study_constructs))
+    return format_collection_response(all_constructs, "constructs")
 
 
 @router.get(
@@ -178,10 +251,41 @@ async def filter_by_construct(
     construct: str = Query(..., description="Mental health construct name")
 ) -> Dict:
     """
-    Filter datasets by specific mental health construct.
+    Filter datasets and mental health studies by specific mental health construct.
     """
-    results = service.search_by_construct(construct)
-    return format_search_response(construct, results, {"construct_filter": construct})
+    # Get datasets with construct
+    dataset_results = service.search_by_construct(construct)
+    
+    # Get studies with construct
+    studies_loader.load_all_studies()
+    study_results = studies_loader.get_studies_by_construct(construct)
+    
+    # Convert study results to dataset format
+    converted_studies = []
+    for study in study_results:
+        study_dict = study.to_dict()
+        converted_study = {
+            "id": study_dict["study_id"],
+            "name": study_dict["title"],
+            "description": study_dict["abstract"],
+            "source": ", ".join([p.get("name", "") for p in study_dict["producers"]]) if study_dict["producers"] else "Research Institution",
+            "constructs": study_dict.get("keywords", []),
+            "instrument": "Observational/Research Data",
+            "access_type": "Research Database",
+            "status": "approved",
+            "created_at": datetime.now().isoformat(),
+            "updated_at": datetime.now().isoformat(),
+            "studies": [],
+            "study_count": 0,
+            "access_url": None,
+            "request_email": None,
+            "is_research_study": True
+        }
+        converted_studies.append(converted_study)
+    
+    # Combine results
+    combined_results = dataset_results + converted_studies
+    return format_search_response(construct, combined_results, {"construct_filter": construct})
 
 
 @router.get(
@@ -395,9 +499,18 @@ async def get_statistics() -> Dict:
     - Mental health constructs covered
     - Studies/citations linked
     - Distribution by access type
+    - Mental health research studies count
     """
     all_datasets = service.get_all_datasets()
     constructs = service.get_unique_constructs()
+    
+    # Load mental health studies
+    studies_loader.load_all_studies()
+    mh_studies = studies_loader.get_all_studies()
+    mh_constructs = list(studies_loader.get_all_constructs())
+    
+    # Combine all constructs
+    all_constructs = list(set(constructs + mh_constructs))
     
     # Count by access type (DRY: reusable pattern)
     access_counts = {}
@@ -410,10 +523,11 @@ async def get_statistics() -> Dict:
     
     return {
         "total_datasets": len(all_datasets),
-        "total_constructs": len(constructs),
-        "total_studies": total_studies,
+        "total_research_studies": len(mh_studies),
+        "total_constructs": len(all_constructs),
+        "total_studies": total_studies + len(mh_studies),
         "by_access_type": access_counts,
-        "constructs_available": len(constructs)
+        "constructs_available": len(all_constructs)
     }
 
 
@@ -431,4 +545,130 @@ async def health_check() -> Dict:
         "status": "healthy",
         "timestamp": datetime.now().isoformat(),
         "version": "1.0"
+    }
+
+
+# ============================================================================
+# MENTAL HEALTH STUDIES - INTEGRATED INTO DISCOVERY SERVICE
+# ============================================================================
+
+@router.get(
+    path="/studies",
+    summary="List all mental health studies",
+    description="Get all mental health studies from scoping review"
+)
+@handle_errors
+async def list_studies(
+    limit: int = Query(100, ge=1, le=500, description="Maximum results to return")
+) -> Dict:
+    """
+    Retrieve all mental health studies loaded from the scoping review.
+    These studies provide research evidence and context for mental health constructs.
+    """
+    all_studies = studies_loader.get_all_studies()
+    studies_data = [s.to_dict() for s in all_studies[:limit]]
+    return format_collection_response(studies_data, "studies")
+
+
+@router.get(
+    path="/studies/{study_id}",
+    summary="Get study details",
+    description="Retrieve complete information about a specific mental health study"
+)
+@handle_errors
+async def get_study_details(study_id: str) -> Dict:
+    """
+    Get comprehensive details about a mental health study including:
+    - Title and authors
+    - Abstract and keywords
+    - Data collection methodology
+    - Geographic scope
+    - Linked constructs
+    """
+    study = studies_loader.get_study(study_id)
+    if not study:
+        raise HTTPException(status_code=404, detail=f"Study {study_id} not found")
+    return {
+        "study": study.to_dict()
+    }
+
+
+@router.get(
+    path="/studies/search/full-text",
+    summary="Search mental health studies by full-text",
+    description="Search study metadata, titles, abstracts, and keywords"
+)
+@handle_errors
+async def search_studies(
+    query: str = Query(..., description="Search query - searches title, abstract, keywords"),
+    limit: int = Query(50, ge=1, le=500, description="Maximum results to return")
+) -> Dict:
+    """
+    Perform full-text search across all mental health studies:
+    - Study titles
+    - Abstracts
+    - Keywords
+    - Author names and affiliations
+    
+    Returns matched studies with relevance.
+    """
+    results = studies_loader.search_studies(query)
+    studies_data = [s.to_dict() for s in results[:limit]]
+    return format_search_response(query, studies_data)
+
+
+@router.get(
+    path="/studies/by-construct/{construct}",
+    summary="Get studies by mental health construct",
+    description="Find all studies measuring a specific mental health construct"
+)
+@handle_errors
+async def get_studies_by_construct(
+    construct: str,
+    limit: int = Query(50, ge=1, le=500, description="Maximum results to return")
+) -> Dict:
+    """
+    Get all mental health studies that measure or focus on a specific construct
+    (e.g., depression, anxiety, bipolar disorder, etc.).
+    """
+    results = studies_loader.get_studies_by_construct(construct)
+    studies_data = [s.to_dict() for s in results[:limit]]
+    return format_search_response(construct, studies_data, {"construct_filter": construct})
+
+
+@router.get(
+    path="/studies/constructs/all",
+    summary="List all mental health constructs in studies",
+    description="Get unique list of all mental health constructs covered in studies"
+)
+@handle_errors
+async def get_study_constructs() -> Dict:
+    """
+    Retrieve all unique mental health constructs (keywords) represented across
+    all loaded mental health studies. Useful for filtering and categorization.
+    """
+    constructs = sorted(list(studies_loader.get_all_constructs()))
+    return format_collection_response(constructs, "constructs")
+
+
+@router.get(
+    path="/studies/statistics",
+    summary="Get mental health studies statistics"
+)
+@handle_errors
+async def get_studies_statistics() -> Dict:
+    """
+    Get overview statistics about mental health studies:
+    - Total number of studies loaded
+    - Number of unique constructs
+    - Keywords/constructs covered
+    """
+    all_studies = studies_loader.get_all_studies()
+    constructs = studies_loader.get_all_constructs()
+    
+    return {
+        "total_studies": len(all_studies),
+        "total_constructs": len(constructs),
+        "constructs_sample": sorted(list(constructs))[:20],
+        "loaded_at": datetime.now().isoformat()
     }
