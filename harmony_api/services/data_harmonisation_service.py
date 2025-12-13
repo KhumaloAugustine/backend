@@ -15,6 +15,9 @@ from enum import Enum
 import uuid
 import json
 
+from harmony_api.services.base_service import BaseRepository, BaseService, BaseEntity
+from harmony_api.core.exceptions import EntityNotFoundException, OperationFailedException
+
 
 # ============================================================================
 # MODELS
@@ -57,10 +60,11 @@ class HarmonisationJob:
 # DATA ACCESS LAYER
 # ============================================================================
 
-class HarmonisationRepository:
+class HarmonisationRepository(BaseRepository):
     """Repository for harmonisation operations"""
     
     def __init__(self):
+        super().__init__()  # Initialize BaseRepository
         self.jobs = {}
         self.datasets = {}
         self.mappings = {}
@@ -108,11 +112,11 @@ class HarmonisationRepository:
 # BUSINESS LOGIC LAYER
 # ============================================================================
 
-class DataHarmonisationService:
+class DataHarmonisationService(BaseService[HarmonisationRepository]):
     """Data Harmonisation Service - Core business logic"""
     
     def __init__(self, repository: HarmonisationRepository):
-        self.repository = repository
+        super().__init__(repository)  # Leverage BaseService
     
     def initiate_harmonisation(self, source_dataset_id: str, target_dataset_id: str,
                               created_by: str) -> HarmonisationJob:

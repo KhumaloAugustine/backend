@@ -27,6 +27,8 @@ from harmony_api.services.data_discovery_service import (
     DatasetStatus,
     AccessType
 )
+from harmony_api.core.middleware import handle_errors
+from harmony_api.core.exceptions import EntityNotFoundException, ValidationException
 
 router = APIRouter(prefix="/discovery", tags=["Data Discovery"])
 
@@ -38,17 +40,7 @@ service = create_data_discovery_service()
 # DRY HELPER FUNCTIONS & DECORATORS
 # ============================================================================
 
-def handle_errors(func: Callable) -> Callable:
-    """Decorator for consistent error handling (DRY)"""
-    @wraps(func)
-    async def wrapper(*args: Any, **kwargs: Any) -> Dict:
-        try:
-            return await func(*args, **kwargs)
-        except ValueError as e:
-            raise HTTPException(status_code=400, detail=str(e))
-        except Exception as e:
-            raise HTTPException(status_code=500, detail=str(e))
-    return wrapper
+# handle_errors now imported from middleware module for DRY
 
 
 def paginate_results(results: List[Dict], limit: int = 50) -> List[Dict]:
@@ -81,7 +73,7 @@ def get_dataset_or_404(dataset_id: str) -> Dict:
     """Get dataset or raise 404 (DRY - reusable validation)"""
     details = service.get_dataset_details(dataset_id)
     if not details:
-        raise HTTPException(status_code=404, detail="Dataset not found")
+        raise EntityNotFoundException("Dataset", dataset_id)
     return details
 
 
