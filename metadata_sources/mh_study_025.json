@@ -1,0 +1,96 @@
+{
+  "doc_desc": {
+    "title": "Beck Anxiety Inventory (BAI) - Anxiety Severity Assessment",
+    "idno": "DDI.MH.INST.BAI",
+    "producers": [
+      {
+        "name": "Aaron T. Beck",
+        "affiliation": "University of Pennsylvania",
+        "role": "Developer"
+      },
+      {
+        "name": "Robert A. Steer",
+        "affiliation": "University of Pennsylvania",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "1988-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Original 21-item anxiety severity measure"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.BAI",
+      "title": "Beck Anxiety Inventory (BAI) - Anxiety Severity Assessment"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "anxiety severity"
+        },
+        {
+          "keyword": "BAI"
+        },
+        {
+          "keyword": "panic disorder"
+        },
+        {
+          "keyword": "mental health assessment"
+        },
+        {
+          "keyword": "psychological distress"
+        },
+        {
+          "keyword": "validated screening"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "anxiety disorders"
+        },
+        {
+          "topic": "clinical assessment"
+        }
+      ],
+      "abstract": "The BAI is a 21-item self-report measure assessing the severity of anxiety symptoms in adolescents and adults. Items describe anxiety symptoms and are rated on a 4-point scale (0=Not at all, 3=Severely). The BAI is useful for screening anxiety disorders and monitoring treatment response.",
+      "time_periods": [
+        {
+          "start": "1988",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "1988",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 21,
+    "response_scale": "0-3 (4-point Likert)",
+    "total_score_range": "0-63",
+    "cutoff_scores": "0-21: Minimal, 22-35: Mild, 36-50: Moderate, 51-63: Severe",
+    "reliability": "Cronbach's alpha 0.92",
+    "validity": "Sensitivity 79%, Specificity 90% for panic disorder"
+  }
+}

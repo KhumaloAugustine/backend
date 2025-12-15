@@ -1,0 +1,97 @@
+{
+  "doc_desc": {
+    "title": "Depression, Anxiety and Stress Scale-21 (DASS-21) - Psychological Distress",
+    "idno": "DDI.MH.INST.DASS21",
+    "producers": [
+      {
+        "name": "Lovibond, S.H.",
+        "affiliation": "UNSW Sydney",
+        "role": "Developer"
+      },
+      {
+        "name": "Lovibond, P.F.",
+        "affiliation": "UNSW Sydney",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "1995-01-01",
+    "version_statement": {
+      "version": "21-item",
+      "version_notes": "Short version with 7 items per subscale"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.DASS21",
+      "title": "Depression, Anxiety and Stress Scale-21 (DASS-21) - Psychological Distress"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "stress"
+        },
+        {
+          "keyword": "psychological distress"
+        },
+        {
+          "keyword": "DASS-21"
+        },
+        {
+          "keyword": "mental health assessment"
+        },
+        {
+          "keyword": "validated screening tool"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "psychological assessment"
+        },
+        {
+          "topic": "clinical evaluation"
+        }
+      ],
+      "abstract": "The DASS-21 is a 21-item self-report questionnaire with three subscales: Depression (7 items), Anxiety (7 items), and Stress (7 items). Each item is rated on a 4-point scale indicating the degree to which the statement applied over the past week. The instrument has been widely used in clinical and research settings across many countries.",
+      "time_periods": [
+        {
+          "start": "1995",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "1995",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 21,
+    "subscales": ["Depression (7 items)", "Anxiety (7 items)", "Stress (7 items)"],
+    "response_scale": "0-3 (4-point Likert)",
+    "total_score_range": "0-63",
+    "subscale_score_range": "0-21 per subscale",
+    "reliability": "Cronbach's alpha 0.88-0.91",
+    "validity": "Good discriminant validity between depression, anxiety, and stress"
+  }
+}

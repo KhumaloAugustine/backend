@@ -1,0 +1,100 @@
+{
+  "doc_desc": {
+    "title": "Perceived Stress Scale (PSS) - Stress Assessment",
+    "idno": "DDI.MH.INST.PSS",
+    "producers": [
+      {
+        "name": "Sheldon Cohen",
+        "affiliation": "Carnegie Mellon University",
+        "role": "Developer"
+      },
+      {
+        "name": "Tom Kamarck",
+        "affiliation": "University of Pittsburgh",
+        "role": "Developer"
+      },
+      {
+        "name": "Robin Mermelstein",
+        "affiliation": "University of Illinois",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "1983-01-01",
+    "version_statement": {
+      "version": "10-item",
+      "version_notes": "Short form with 10 items"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.PSS",
+      "title": "Perceived Stress Scale (PSS) - Stress Assessment"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "stress"
+        },
+        {
+          "keyword": "perceived stress"
+        },
+        {
+          "keyword": "PSS"
+        },
+        {
+          "keyword": "psychological distress"
+        },
+        {
+          "keyword": "mental health assessment"
+        },
+        {
+          "keyword": "coping"
+        },
+        {
+          "keyword": "life stress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "stress and coping"
+        },
+        {
+          "topic": "health psychology"
+        }
+      ],
+      "abstract": "The PSS is a 10-item self-report measure assessing the degree to which situations in one's life are appraised as stressful. Items are rated on a 5-point scale (0=Never, 4=Very Often). It measures how unpredictable, uncontrollable, and overwhelming respondents find their lives to be.",
+      "time_periods": [
+        {
+          "start": "1983",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "1983",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 10,
+    "response_scale": "0-4 (5-point Likert)",
+    "total_score_range": "0-40",
+    "reliability": "Cronbach's alpha 0.78",
+    "validity": "Highly correlated with psychological and physical health outcomes"
+  }
+}

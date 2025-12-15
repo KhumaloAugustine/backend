@@ -1,0 +1,101 @@
+{
+  "doc_desc": {
+    "title": "Patient Health Questionnaire-9 (PHQ-9) - Depression Screening",
+    "idno": "DDI.MH.INST.PHQ9",
+    "producers": [
+      {
+        "name": "Robert L. Spitzer",
+        "affiliation": "Columbia University",
+        "role": "Developer"
+      },
+      {
+        "name": "Kurt Kroenke",
+        "affiliation": "Indiana University School of Medicine",
+        "role": "Developer"
+      },
+      {
+        "name": "Janet B.W. Williams",
+        "affiliation": "Columbia University",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "1999-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Original version validated for depression screening"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.PHQ9",
+      "title": "Patient Health Questionnaire-9 (PHQ-9) - Depression Screening"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "depression"
+        },
+        {
+          "keyword": "mental health screening"
+        },
+        {
+          "keyword": "PHQ-9"
+        },
+        {
+          "keyword": "validated instrument"
+        },
+        {
+          "keyword": "DSM-IV criteria"
+        },
+        {
+          "keyword": "psychological distress"
+        },
+        {
+          "keyword": "mood disorder"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "depression screening"
+        },
+        {
+          "topic": "primary care"
+        }
+      ],
+      "abstract": "The PHQ-9 is a 9-item self-report measure derived from the Patient Health Questionnaire that screens for and measures the severity of depression. Each item corresponds to a DSM-IV criterion for major depression. Items are rated on a 4-point scale (0=Not at all, 3=Nearly every day). The PHQ-9 is widely used in clinical practice and research.",
+      "time_periods": [
+        {
+          "start": "1999",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "1999",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Screening Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 9,
+    "response_scale": "0-3 (4-point Likert)",
+    "total_score_range": "0-27",
+    "cutoff_scores": "5-9: Mild, 10-14: Moderate, 15-19: Moderately Severe, 20-27: Severe",
+    "reliability": "Cronbach's alpha 0.89",
+    "validity": "Sensitivity 88%, Specificity 88% for depression"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "doc_desc": {
+    "title": "Child and Adolescent Trauma Screen (CATS) - Youth Trauma Assessment",
+    "idno": "DDI.MH.INST.CATS",
+    "producers": [
+      {
+        "name": "Robert Schwab-Stone",
+        "affiliation": "Yale University",
+        "role": "Developer"
+      },
+      {
+        "name": "Helen Hoover",
+        "affiliation": "Yale University",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "2000-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Youth trauma screening tool"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.CATS",
+      "title": "Child and Adolescent Trauma Screen (CATS) - Youth Trauma Assessment"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "trauma"
+        },
+        {
+          "keyword": "PTSD in youth"
+        },
+        {
+          "keyword": "CATS"
+        },
+        {
+          "keyword": "adolescent mental health"
+        },
+        {
+          "keyword": "exposure to violence"
+        },
+        {
+          "keyword": "mental health screening"
+        },
+        {
+          "keyword": "child trauma"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "adolescent trauma"
+        },
+        {
+          "topic": "violence exposure"
+        }
+      ],
+      "abstract": "The CATS is a 15-item self-report measure designed to screen children and adolescents for trauma exposure and symptoms of PTSD. Items assess exposure to different types of trauma and emotional reactions. It is brief, sensitive, and useful for identifying youth needing further assessment.",
+      "time_periods": [
+        {
+          "start": "2000",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "2000",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Adolescents",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 15,
+    "age_range": "8-18 years",
+    "response_scale": "Yes/No",
+    "reliability": "Cronbach's alpha 0.88",
+    "validity": "Sensitivity 92%, Specificity 87% for PTSD"
+  }
+}

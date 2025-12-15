@@ -1,0 +1,101 @@
+{
+  "doc_desc": {
+    "title": "Generalized Anxiety Disorder-7 (GAD-7) - Anxiety Screening",
+    "idno": "DDI.MH.INST.GAD7",
+    "producers": [
+      {
+        "name": "Robert L. Spitzer",
+        "affiliation": "Columbia University",
+        "role": "Developer"
+      },
+      {
+        "name": "Kurt Kroenke",
+        "affiliation": "Indiana University School of Medicine",
+        "role": "Developer"
+      },
+      {
+        "name": "Sheila Williams",
+        "affiliation": "Columbia University",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "2006-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Original version for generalized anxiety disorder screening"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.GAD7",
+      "title": "Generalized Anxiety Disorder-7 (GAD-7) - Anxiety Screening"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "anxiety"
+        },
+        {
+          "keyword": "generalized anxiety disorder"
+        },
+        {
+          "keyword": "GAD-7"
+        },
+        {
+          "keyword": "mental health screening"
+        },
+        {
+          "keyword": "DSM-IV criteria"
+        },
+        {
+          "keyword": "psychological distress"
+        },
+        {
+          "keyword": "worry"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "anxiety disorder"
+        },
+        {
+          "topic": "primary care"
+        }
+      ],
+      "abstract": "The GAD-7 is a 7-item self-report measure for screening and measuring the severity of generalized anxiety disorder. Items correspond to DSM-IV criteria for GAD. Items are rated on a 4-point scale (0=Not at all, 3=Nearly every day). It has excellent internal consistency and test-retest reliability.",
+      "time_periods": [
+        {
+          "start": "2006",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "2006",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Screening Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 7,
+    "response_scale": "0-3 (4-point Likert)",
+    "total_score_range": "0-21",
+    "cutoff_scores": "5-9: Mild, 10-14: Moderate, 15-21: Severe",
+    "reliability": "Cronbach's alpha 0.92",
+    "validity": "Sensitivity 89%, Specificity 86% for generalized anxiety disorder"
+  }
+}

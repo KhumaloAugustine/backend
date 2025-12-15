@@ -1,0 +1,91 @@
+{
+  "doc_desc": {
+    "title": "World Health Organization Disability Assessment Schedule 2.0 (WHODAS 2.0) - Functional Disability",
+    "idno": "DDI.MH.INST.WHODAS",
+    "producers": [
+      {
+        "name": "World Health Organization",
+        "affiliation": "WHO",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "2010-01-01",
+    "version_statement": {
+      "version": "2.0",
+      "version_notes": "12-item short form"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.WHODAS",
+      "title": "World Health Organization Disability Assessment Schedule 2.0 (WHODAS 2.0) - Functional Disability"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "disability"
+        },
+        {
+          "keyword": "functional impairment"
+        },
+        {
+          "keyword": "WHODAS"
+        },
+        {
+          "keyword": "quality of life"
+        },
+        {
+          "keyword": "mental health impact"
+        },
+        {
+          "keyword": "daily functioning"
+        },
+        {
+          "keyword": "WHO ICF"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "disability assessment"
+        },
+        {
+          "topic": "functional status"
+        }
+      ],
+      "abstract": "The WHODAS 2.0 is a 12-item measure assessing difficulties in daily functioning due to physical or mental health problems. Items cover domains like cognition, mobility, self-care, and social participation. Rated on a 5-point scale, it provides a profile of functional disability across key life areas.",
+      "time_periods": [
+        {
+          "start": "2010",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "2010",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 12,
+    "response_scale": "0-4 (5-point Likert)",
+    "total_score_range": "0-48",
+    "domains": ["Cognition", "Mobility", "Self-care", "Getting along", "Work/household", "Community participation"],
+    "reliability": "Cronbach's alpha 0.84",
+    "validity": "Good correlation with clinical outcome measures"
+  }
+}

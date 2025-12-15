@@ -1,0 +1,90 @@
+{
+  "doc_desc": {
+    "title": "Rosenberg Self-Esteem Scale (RSES) - Self-Esteem Assessment",
+    "idno": "DDI.MH.INST.RSES",
+    "producers": [
+      {
+        "name": "Morris Rosenberg",
+        "affiliation": "University of Maryland",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "1965-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Original 10-item self-esteem measure"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.RSES",
+      "title": "Rosenberg Self-Esteem Scale (RSES) - Self-Esteem Assessment"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "self-esteem"
+        },
+        {
+          "keyword": "self-worth"
+        },
+        {
+          "keyword": "RSES"
+        },
+        {
+          "keyword": "psychological well-being"
+        },
+        {
+          "keyword": "mental health assessment"
+        },
+        {
+          "keyword": "adolescent mental health"
+        },
+        {
+          "keyword": "validated instrument"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "self-concept"
+        },
+        {
+          "topic": "psychological well-being"
+        }
+      ],
+      "abstract": "The RSES is a 10-item self-report scale assessing overall feelings of self-worth and self-acceptance. Items are rated on a 4-point scale from Strongly Agree to Strongly Disagree. It is one of the most widely used measures of self-esteem in research and clinical practice.",
+      "time_periods": [
+        {
+          "start": "1965",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "1965",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 10,
+    "response_scale": "1-4 (4-point Likert)",
+    "total_score_range": "10-40",
+    "reliability": "Cronbach's alpha 0.81-0.85",
+    "validity": "Highly correlated with other measures of self-esteem"
+  }
+}

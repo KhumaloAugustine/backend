@@ -1,0 +1,101 @@
+{
+  "doc_desc": {
+    "title": "Pittsburgh Sleep Quality Index (PSQI) - Sleep Assessment",
+    "idno": "DDI.MH.INST.PSQI",
+    "producers": [
+      {
+        "name": "Daniel J. Buysse",
+        "affiliation": "University of Pittsburgh",
+        "role": "Developer"
+      },
+      {
+        "name": "Charles F. Reynolds III",
+        "affiliation": "University of Pittsburgh",
+        "role": "Developer"
+      },
+      {
+        "name": "Timothy H. Monk",
+        "affiliation": "University of Pittsburgh",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "1989-01-01",
+    "version_statement": {
+      "version": "1.0",
+      "version_notes": "Standard sleep quality assessment tool"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.PSQI",
+      "title": "Pittsburgh Sleep Quality Index (PSQI) - Sleep Assessment"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "sleep quality"
+        },
+        {
+          "keyword": "sleep disorder"
+        },
+        {
+          "keyword": "PSQI"
+        },
+        {
+          "keyword": "insomnia"
+        },
+        {
+          "keyword": "mental health"
+        },
+        {
+          "keyword": "sleep patterns"
+        },
+        {
+          "keyword": "psychological health"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "sleep medicine"
+        },
+        {
+          "topic": "clinical assessment"
+        }
+      ],
+      "abstract": "The PSQI is a 19-item self-report instrument for assessing sleep quality. It measures seven domains of sleep: subjective sleep quality, sleep latency, sleep duration, habitual sleep efficiency, sleep disturbances, use of sleeping medication, and daytime dysfunction. Global scores range from 0-21, with higher scores indicating worse sleep quality.",
+      "time_periods": [
+        {
+          "start": "1989",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "1989",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 19,
+    "response_scale": "0-3 (Variable)",
+    "total_score_range": "0-21",
+    "cutoff_scores": ">5: Poor sleep quality",
+    "reliability": "Cronbach's alpha 0.85",
+    "validity": "Sensitivity 89.6%, Specificity 86.5% for sleep disorders"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "doc_desc": {
+    "title": "PTSD Checklist for DSM-5 (PCL-5) - Trauma Assessment",
+    "idno": "DDI.MH.INST.PCL5",
+    "producers": [
+      {
+        "name": "Frank W. Weathers",
+        "affiliation": "Department of Veterans Affairs",
+        "role": "Developer"
+      },
+      {
+        "name": "Blake E. Blake",
+        "affiliation": "Department of Veterans Affairs",
+        "role": "Developer"
+      },
+      {
+        "name": "Terence M. Keane",
+        "affiliation": "Department of Veterans Affairs",
+        "role": "Developer"
+      }
+    ],
+    "prod_date": "2013-01-01",
+    "version_statement": {
+      "version": "5",
+      "version_notes": "Updated for DSM-5 criteria"
+    }
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.PCL5",
+      "title": "PTSD Checklist for DSM-5 (PCL-5) - Trauma Assessment"
+    },
+    "study_info": {
+      "keywords": [
+        {
+          "keyword": "PTSD"
+        },
+        {
+          "keyword": "post-traumatic stress disorder"
+        },
+        {
+          "keyword": "trauma"
+        },
+        {
+          "keyword": "PCL-5"
+        },
+        {
+          "keyword": "mental health screening"
+        },
+        {
+          "keyword": "DSM-5 criteria"
+        },
+        {
+          "keyword": "psychological distress"
+        }
+      ],
+      "topics": [
+        {
+          "topic": "mental health"
+        },
+        {
+          "topic": "trauma and stress-related disorders"
+        },
+        {
+          "topic": "clinical assessment"
+        }
+      ],
+      "abstract": "The PCL-5 is a 20-item self-report measure assessing symptoms of post-traumatic stress disorder based on DSM-5 criteria. Items are rated on a 5-point scale (0=Not at all, 4=Extremely). The PCL-5 can be used as a screening tool, diagnostic aid, and severity measurement for PTSD.",
+      "time_periods": [
+        {
+          "start": "2013",
+          "end": "2024-12-31"
+        }
+      ],
+      "coll_dates": [
+        {
+          "start": "2013",
+          "end": "2024"
+        }
+      ],
+      "nation": [
+        {
+          "name": "Worldwide",
+          "abbreviation": "WW"
+        }
+      ],
+      "geog_coverage": "International",
+      "analysis_unit": "Individuals",
+      "data_kind": "Assessment Instrument - Self-report"
+    }
+  },
+  "schematype": "instrument",
+  "instrument_details": {
+    "item_count": 20,
+    "response_scale": "0-4 (5-point Likert)",
+    "total_score_range": "0-80",
+    "cutoff_scores": "31-33: Suggested cutoff for PTSD diagnosis",
+    "reliability": "Cronbach's alpha 0.94",
+    "validity": "Sensitivity 95%, Specificity 94% for PTSD diagnosis"
+  }
+}
