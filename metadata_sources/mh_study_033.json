@@ -1,0 +1,129 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.DJGLS",
+    "title": "De Jong Gierveld Loneliness Scale",
+    "producers": [
+      {
+        "name": "de Jong Gierveld, J., & Kamphuis, F.",
+        "affiliation": "Netherlands Interdisciplinary Demographic Institute",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1985",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.DJGLS",
+      "title": "De Jong Gierveld Loneliness Scale",
+      "subtitle": "11-item measure of emotional and social loneliness"
+    },
+    "study_info": {
+      "abstract": "The De Jong Gierveld Loneliness Scale is an 11-item questionnaire designed to measure subjective feelings of loneliness. It assesses both emotional loneliness (feeling lack of intimate emotional relationships) and social loneliness (feeling lack of broader social network). The scale is brief and suitable for population studies.",
+      "keywords": [
+        {
+          "keyword": "loneliness"
+        },
+        {
+          "keyword": "social isolation"
+        },
+        {
+          "keyword": "emotional connection"
+        },
+        {
+          "keyword": "quality of life"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "DJGLS",
+    "full_name": "De Jong Gierveld Loneliness Scale",
+    "measurement_target": "Emotional and social loneliness",
+    "num_items": 11,
+    "response_scale": "3-point scale (Yes, More or less, No)",
+    "score_range": "0-11",
+    "interpretation": "0-2: Not lonely; 3-8: Moderately lonely; 9-11: Severely lonely",
+    "subscales": [
+      "Emotional loneliness (5 items)",
+      "Social loneliness (6 items)"
+    ],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.79-0.82",
+      "validity": "Good concurrent validity with other loneliness measures",
+      "sensitivity": "0.80",
+      "specificity": "0.78"
+    },
+    "populations": ["Older adults", "General population", "Adolescents"],
+    "languages": ["English", "Dutch", "Multiple"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "I experience a general sense of emptiness",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Emotional loneliness"
+    },
+    {
+      "question_no": 2,
+      "question_text": "I miss having a really close friend",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Emotional loneliness"
+    },
+    {
+      "question_no": 3,
+      "question_text": "I often feel rejected",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Social loneliness"
+    },
+    {
+      "question_no": 4,
+      "question_text": "There are plenty of people I can rely on when I have problems",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Social loneliness"
+    },
+    {
+      "question_no": 5,
+      "question_text": "There are many people I can trust completely",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Emotional loneliness"
+    },
+    {
+      "question_no": 6,
+      "question_text": "There are enough people I can talk to",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Social loneliness"
+    },
+    {
+      "question_no": 7,
+      "question_text": "There are many people who understand me really well",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Emotional loneliness"
+    },
+    {
+      "question_no": 8,
+      "question_text": "I am included in groups of friends and their activities",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Social loneliness"
+    },
+    {
+      "question_no": 9,
+      "question_text": "I have a lot in common with the people around me",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Social loneliness"
+    },
+    {
+      "question_no": 10,
+      "question_text": "I am part of a group of friends",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Social loneliness"
+    },
+    {
+      "question_no": 11,
+      "question_text": "I can call on my friends for support when I need to",
+      "response_options": ["Yes", "More or less", "No"],
+      "subscale": "Emotional loneliness"
+    }
+  ]
+}

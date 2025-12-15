@@ -1,0 +1,135 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.MSPSS",
+    "title": "MSPSS (Multidimensional Scale of Perceived Social Support)",
+    "producers": [
+      {
+        "name": "Zimet, G.D., Dahlem, N.W., Zimet, S.G., & Farley, G.K.",
+        "affiliation": "Indiana University School of Medicine",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1988",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.MSPSS",
+      "title": "MSPSS: Multidimensional Scale of Perceived Social Support",
+      "subtitle": "12-item measure of perceived social support from family, friends, and significant others"
+    },
+    "study_info": {
+      "abstract": "The MSPSS is a 12-item instrument designed to measure perceived social support from three sources: family, friends, and a significant other. It provides both total social support scores and subscale scores for each support source. The scale is widely used in research on stress, coping, mental health, and resilience.",
+      "keywords": [
+        {
+          "keyword": "social support"
+        },
+        {
+          "keyword": "perceived support"
+        },
+        {
+          "keyword": "family support"
+        },
+        {
+          "keyword": "resilience and coping"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "MSPSS",
+    "full_name": "Multidimensional Scale of Perceived Social Support",
+    "measurement_target": "Perceived social support from multiple sources",
+    "num_items": 12,
+    "response_scale": "7-point Likert (Strongly disagree to Strongly agree)",
+    "score_range": "12-84",
+    "interpretation": "12-36: Low social support; 37-60: Moderate social support; 61-84: High social support",
+    "subscales": [
+      "Significant Other Support (4 items)",
+      "Family Support (4 items)",
+      "Friend Support (4 items)"
+    ],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.85-0.91",
+      "validity": "Good construct validity and convergent validity",
+      "test_retest_reliability": "r = 0.72-0.85"
+    },
+    "populations": ["Adolescents", "Adults", "Clinical populations"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "There is a special person who is around when I am in need",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Significant Other Support"
+    },
+    {
+      "question_no": 2,
+      "question_text": "There is a special person with whom I can share my joys and sorrows",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Significant Other Support"
+    },
+    {
+      "question_no": 3,
+      "question_text": "My family really tries to help me",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Family Support"
+    },
+    {
+      "question_no": 4,
+      "question_text": "I get the emotional help and support I need from my family",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Family Support"
+    },
+    {
+      "question_no": 5,
+      "question_text": "I have a special person in my life who cares about my feelings",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Significant Other Support"
+    },
+    {
+      "question_no": 6,
+      "question_text": "My friends really try to help me",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Friend Support"
+    },
+    {
+      "question_no": 7,
+      "question_text": "I can count on my friends when things go wrong",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Friend Support"
+    },
+    {
+      "question_no": 8,
+      "question_text": "I have a special person who is a real source of comfort to me",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Significant Other Support"
+    },
+    {
+      "question_no": 9,
+      "question_text": "My family is willing to help me make decisions",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Family Support"
+    },
+    {
+      "question_no": 10,
+      "question_text": "I can talk about my problems with my friends",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Friend Support"
+    },
+    {
+      "question_no": 11,
+      "question_text": "My family has helped me to handle stress",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Family Support"
+    },
+    {
+      "question_no": 12,
+      "question_text": "I can count on my friends who care",
+      "response_options": ["Strongly disagree", "Disagree", "Slightly disagree", "Neutral", "Slightly agree", "Agree", "Strongly agree"],
+      "subscale": "Friend Support"
+    }
+  ]
+}

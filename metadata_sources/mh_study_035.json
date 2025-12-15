@@ -1,0 +1,109 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.MCBPD",
+    "title": "McLean Screening Instrument for Borderline Personality Disorder",
+    "producers": [
+      {
+        "name": "Zanarini, M.C., Vujanovic, A.A., Parachini, E.A., et al.",
+        "affiliation": "Harvard Medical School",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "2003",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.MCBPD",
+      "title": "McLean Screening Instrument for Borderline Personality Disorder",
+      "subtitle": "10-item screening questionnaire for borderline personality disorder"
+    },
+    "study_info": {
+      "abstract": "The McLean Screening Instrument for Borderline Personality Disorder (MSI-BPD) is a 10-item self-report questionnaire designed to screen for Borderline Personality Disorder (BPD). It assesses core features of BPD including affective instability, chronic emptiness, identity disturbance, dangerous impulsivity, and unstable relationships. The scale is brief, reliable, and suitable for clinical and research settings.",
+      "keywords": [
+        {
+          "keyword": "borderline personality disorder"
+        },
+        {
+          "keyword": "personality pathology"
+        },
+        {
+          "keyword": "emotional dysregulation"
+        },
+        {
+          "keyword": "psychopathology screening"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "MSI-BPD",
+    "full_name": "McLean Screening Instrument for Borderline Personality Disorder",
+    "measurement_target": "Borderline Personality Disorder symptoms",
+    "num_items": 10,
+    "response_scale": "Yes/No",
+    "score_range": "0-10",
+    "interpretation": "0-3: Low likelihood of BPD; 4-6: Moderate likelihood; 7-10: High likelihood of BPD",
+    "psychometric_properties": {
+      "reliability": "Test-retest reliability r = 0.88",
+      "validity": "Sensitivity = 0.81, Specificity = 0.85 for BPD diagnosis",
+      "positive_predictive_value": "0.80",
+      "negative_predictive_value": "0.88"
+    },
+    "populations": ["Adults with personality pathology", "Clinical samples", "Psychiatric inpatients"],
+    "languages": ["English", "Multiple languages"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Have you deliberately hurt yourself (e.g., cut, burned, or bit yourself, hit yourself, or banged your head)?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "Have you had recurrent suicidal thoughts, plans, threats, or behaviors, or have you engaged in self-harm behavior?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "Are you uncertain about major things in life, such as what you really want to do, what kind of people to be friends with, or which values are important for you to live by?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "Are your relationships very unstable? For example, do your feelings about other people change dramatically - from admiring them to hating them?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "Have you felt impulsive in several different areas of your life (e.g., substance abuse, binge eating, reckless driving, shoplifting, spending money irresponsibly)?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Have you had recurrent angry outbursts or felt uncontrollable anger?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Do you feel empty inside most of the time?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "Do you do things frantically to avoid being abandoned (e.g., leave your job, end friendships, run away)?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Have you had intense, unstable romantic relationships that alternate between idealization and devaluation?",
+      "response_options": ["Yes", "No"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "Have you ever threatened, attempted, or engaged in suicidal behavior, or engaged in self-harming behavior as a way to cope with intense negative emotions?",
+      "response_options": ["Yes", "No"]
+    }
+  ]
+}

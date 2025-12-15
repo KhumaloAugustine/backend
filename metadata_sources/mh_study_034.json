@@ -1,0 +1,171 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.ASRS",
+    "title": "ASRS (Adult ADHD Self-Report Scale)",
+    "producers": [
+      {
+        "name": "Kessler, R.C., Adler, L., Ames, M., et al.",
+        "affiliation": "World Health Organization / National Comorbidity Survey",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "2003",
+    "language": "English",
+    "version": "1.1"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.ASRS",
+      "title": "ASRS: Adult ADHD Self-Report Scale",
+      "subtitle": "18-item screening questionnaire for ADHD in adults"
+    },
+    "study_info": {
+      "abstract": "The ASRS is an 18-item self-report questionnaire developed by the World Health Organization to screen for attention-deficit/hyperactivity disorder (ADHD) in adults. It assesses symptoms of inattention and hyperactivity-impulsivity. The scale is based on the DSM-IV criteria for ADHD and is designed for use in epidemiological studies and clinical practice.",
+      "keywords": [
+        {
+          "keyword": "ADHD screening"
+        },
+        {
+          "keyword": "attention-deficit disorder"
+        },
+        {
+          "keyword": "adult psychopathology"
+        },
+        {
+          "keyword": "cognitive function"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "ASRS",
+    "full_name": "Adult ADHD Self-Report Scale",
+    "measurement_target": "ADHD symptoms in adults",
+    "num_items": 18,
+    "response_scale": "5-point frequency scale (Never, Rarely, Sometimes, Often, Very often)",
+    "score_range": "0-72",
+    "interpretation": "0-22: Low probability of ADHD; 23-36: Moderate ADHD symptoms; 37-72: High probability of ADHD",
+    "subscales": [
+      "Inattention (9 items)",
+      "Hyperactivity-Impulsivity (9 items)"
+    ],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.73-0.88",
+      "validity": "Good concordance with clinical ADHD diagnosis",
+      "sensitivity": "0.68-0.73",
+      "specificity": "0.99"
+    },
+    "populations": ["Adults aged 18+", "Clinical samples", "Community samples"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 2,
+      "question_text": "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 3,
+      "question_text": "How often do you have problems remembering appointments or obligations?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 4,
+      "question_text": "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 5,
+      "question_text": "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 6,
+      "question_text": "How often do you feel overly active and compelled to do things, like you were driven by a motor?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 7,
+      "question_text": "How often do you make careless mistakes when you have to work on a boring or difficult project?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 8,
+      "question_text": "How often do you have trouble keeping your attention when you are doing boring or repetitive work?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 9,
+      "question_text": "How often do you have difficulty concentrating on what people are saying, even when they are speaking directly to you?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 10,
+      "question_text": "How often do you have problems organizing activities or tasks when you need to do them with others?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 11,
+      "question_text": "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 12,
+      "question_text": "How often do you interrupt others when they are in the middle of something?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 13,
+      "question_text": "How often do you have trouble waiting your turn in situations when turn-taking is required?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 14,
+      "question_text": "How often do you have a hard time doing quiet activities?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 15,
+      "question_text": "How often do you feel like you are on the go or driven by a motor?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 16,
+      "question_text": "How often do you talk excessively?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Hyperactivity-Impulsivity"
+    },
+    {
+      "question_no": 17,
+      "question_text": "How often do you have trouble starting projects or tasks?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    },
+    {
+      "question_no": 18,
+      "question_text": "How often do you have problems managing your time when given deadlines?",
+      "response_options": ["Never", "Rarely", "Sometimes", "Often", "Very often"],
+      "subscale": "Inattention"
+    }
+  ]
+}

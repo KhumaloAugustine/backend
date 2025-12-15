@@ -1,0 +1,162 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.CESD",
+    "title": "CES-D (Center for Epidemiologic Studies Depression Scale)",
+    "producers": [
+      {
+        "name": "National Center for Health Statistics",
+        "affiliation": "CDC",
+        "role": "Original Developer"
+      }
+    ],
+    "prod_date": "1977",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.CESD",
+      "title": "CES-D: Center for Epidemiologic Studies Depression Scale",
+      "subtitle": "A 20-item self-report measure of depressive symptoms in the general population"
+    },
+    "study_info": {
+      "abstract": "The CES-D is a 20-item self-report depression scale designed to measure depressive symptoms in the general population. It is widely used in epidemiological studies and clinical research. The scale assesses frequency and duration of depressive symptoms over the past week on a 4-point Likert scale.",
+      "keywords": [
+        {
+          "keyword": "depression screening"
+        },
+        {
+          "keyword": "depressive symptoms"
+        },
+        {
+          "keyword": "epidemiological assessment"
+        },
+        {
+          "keyword": "mental health screening"
+        }
+      ],
+      "study_info": {
+        "abstract": "20-item depression screening scale"
+      }
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "CES-D",
+    "full_name": "Center for Epidemiologic Studies Depression Scale",
+    "measurement_target": "Depressive symptoms",
+    "num_items": 20,
+    "response_scale": "4-point Likert (0=Rarely/None, 1=Some, 2=Occasionally, 3=Most/All)",
+    "score_range": "0-60",
+    "interpretation": "0-15: No/minimal depression; 16-26: Mild depression; 27-32: Moderate depression; 33+: Severe depression",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.85-0.90",
+      "validity": "High convergent validity with clinical diagnoses",
+      "sensitivity": "0.81-0.88",
+      "specificity": "0.80-0.95"
+    },
+    "populations": ["General population", "Clinical samples", "Adolescents", "Older adults"],
+    "languages": ["English", "Spanish", "French", "Multiple"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "I was bothered by things that usually don't bother me",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "I did not feel like eating; my appetite was poor",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "I felt that I could not shake off the blues even with help from family or friends",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "I felt that I was just as good as other people",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "I had trouble keeping my mind on what I was doing",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "I felt depressed",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "I felt that everything I did was an effort",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "I felt hopeful about the future",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "I thought my life had been a failure",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "I felt fearful",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "My sleep was restless",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "I was happy",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "I talked less than usual",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "I felt lonely",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "People were unfriendly",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 16,
+      "question_text": "I enjoyed life",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 17,
+      "question_text": "I had crying spells",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 18,
+      "question_text": "I felt sad",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 19,
+      "question_text": "I felt that people disliked me",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    },
+    {
+      "question_no": 20,
+      "question_text": "I could not get 'going'",
+      "response_options": ["Rarely or none of the time (less than 1 day)", "Some or a little of the time (1-2 days)", "Occasionally or a moderate amount of the time (3-4 days)", "Most or all of the time (5-7 days)"]
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.RCADS",
+    "title": "RCADS (Revised Child Anxiety and Depression Scale)",
+    "producers": [
+      {
+        "name": "Chorpita, B.F., Yim, L., Moffitt, C.E., et al.",
+        "affiliation": "University of California, Los Angeles",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "2000",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.RCADS",
+      "title": "RCADS: Revised Child Anxiety and Depression Scale",
+      "subtitle": "47-item scale measuring anxiety and depression in children and adolescents"
+    },
+    "study_info": {
+      "abstract": "The RCADS is a 47-item self-report scale designed to measure anxiety and depression symptoms in children and adolescents ages 8-18. It assesses six dimensions: Separation Anxiety Disorder, Generalized Anxiety Disorder, Social Phobia, Panic Disorder/Agoraphobia, Obsessive-Compulsive Disorder, and Major Depressive Disorder. The scale is based on the DSM-IV diagnostic criteria.",
+      "keywords": [
+        {
+          "keyword": "childhood anxiety"
+        },
+        {
+          "keyword": "childhood depression"
+        },
+        {
+          "keyword": "adolescent mental health"
+        },
+        {
+          "keyword": "anxiety and depression assessment"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "RCADS",
+    "full_name": "Revised Child Anxiety and Depression Scale",
+    "measurement_target": "Anxiety and depression in children and adolescents",
+    "num_items": 47,
+    "response_scale": "4-point Likert (0=Never, 1=Sometimes, 2=Often, 3=Always)",
+    "score_range": "0-141",
+    "subscales": [
+      "Separation Anxiety Disorder (6 items)",
+      "Generalized Anxiety Disorder (6 items)",
+      "Social Phobia (9 items)",
+      "Panic Disorder/Agoraphobia (9 items)",
+      "Obsessive-Compulsive Disorder (6 items)",
+      "Major Depressive Disorder (10 items)",
+      "Total Anxiety Score (30 items)"
+    ],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.80-0.92",
+      "validity": "Good convergent validity with clinical diagnoses",
+      "sensitivity": "0.73-0.84",
+      "specificity": "0.80-0.90"
+    },
+    "populations": ["Children ages 8-18", "Adolescents", "Clinical samples"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "When I am away from my parents, I feel scared or anxious",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 2,
+      "question_text": "I feel sad or empty",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 3,
+      "question_text": "When I am away from my parents, I worry that something might happen to them",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 4,
+      "question_text": "I worry that I might get a serious illness or disease",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 5,
+      "question_text": "I worry a lot",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 6,
+      "question_text": "I get scared if I have to sleep on my own",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 7,
+      "question_text": "I feel worried about my schoolwork and tests",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 8,
+      "question_text": "I have trouble sleeping",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 9,
+      "question_text": "I worry about what other kids think of me",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 10,
+      "question_text": "I feel nervous or anxious",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 11,
+      "question_text": "I want to be alone",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 12,
+      "question_text": "I worry that something bad might happen to me",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 13,
+      "question_text": "I get scared when I think about dying",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 14,
+      "question_text": "I get scared if I go to school",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 15,
+      "question_text": "I feel nervous or anxious when I'm around other kids",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 16,
+      "question_text": "I have a lot of trouble getting to sleep or staying asleep",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 17,
+      "question_text": "I get scared in crowded places",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 18,
+      "question_text": "I have thoughts that upset me",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Obsessive-Compulsive Disorder"
+    },
+    {
+      "question_no": 19,
+      "question_text": "I am scared of heights",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 20,
+      "question_text": "I am a worrier",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 21,
+      "question_text": "I have no energy to do things",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 22,
+      "question_text": "I am scared of dogs",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 23,
+      "question_text": "I have to do certain things over and over again to feel okay",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Obsessive-Compulsive Disorder"
+    },
+    {
+      "question_no": 24,
+      "question_text": "I have a hard time thinking about or concentrating on my schoolwork",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 25,
+      "question_text": "I feel scared when I have to perform in front of other people",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 26,
+      "question_text": "I feel scared or anxious all of a sudden, for no reason",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 27,
+      "question_text": "I have to keep checking that I have done something",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Obsessive-Compulsive Disorder"
+    },
+    {
+      "question_no": 28,
+      "question_text": "I would describe myself as an anxious person",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 29,
+      "question_text": "I eat less than usual or don't want to eat",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 30,
+      "question_text": "I think about dying",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 31,
+      "question_text": "I have trouble finishing my homework",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 32,
+      "question_text": "I feel pains in my chest or my heart races",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 33,
+      "question_text": "I have to think about special things to make the thoughts go away",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Obsessive-Compulsive Disorder"
+    },
+    {
+      "question_no": 34,
+      "question_text": "I don't like being with other kids",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 35,
+      "question_text": "I feel that something bad is going to happen",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 36,
+      "question_text": "I get scared or anxious when I have to go to school",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 37,
+      "question_text": "I don't like to say or do things in front of other people",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 38,
+      "question_text": "I get scared if I have to do something in front of other kids",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 39,
+      "question_text": "I feel like I'm going crazy",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 40,
+      "question_text": "I worry about going to school",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 41,
+      "question_text": "I have trouble thinking clearly",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 42,
+      "question_text": "I feel uncomfortable being in closed spaces",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 43,
+      "question_text": "I have problems with unwanted thoughts",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Obsessive-Compulsive Disorder"
+    },
+    {
+      "question_no": 44,
+      "question_text": "I don't want to see my family",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Major Depressive Disorder"
+    },
+    {
+      "question_no": 45,
+      "question_text": "I feel dizzy or faint",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 46,
+      "question_text": "I have to do certain things just right to feel okay",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Obsessive-Compulsive Disorder"
+    },
+    {
+      "question_no": 47,
+      "question_text": "I am scared to be alone",
+      "response_options": ["Never", "Sometimes", "Often", "Always"],
+      "subscale": "Separation Anxiety Disorder"
+    }
+  ]
+}

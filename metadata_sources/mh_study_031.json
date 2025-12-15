@@ -1,0 +1,312 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.SCARED",
+    "title": "SCARED (Screen for Child Anxiety Related Emotional Disorders) - Child Version",
+    "producers": [
+      {
+        "name": "Birmaher, B., Brent, D., Chiappetta, L., et al.",
+        "affiliation": "University of Pittsburgh School of Medicine",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1999",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.SCARED",
+      "title": "SCARED: Screen for Child Anxiety Related Emotional Disorders",
+      "subtitle": "41-item child self-report measure of anxiety disorders"
+    },
+    "study_info": {
+      "abstract": "The SCARED is a 41-item self-report screening tool designed to identify anxiety disorders in children and adolescents (ages 8-18). It measures five types of anxiety: generalized anxiety disorder, social phobia, separation anxiety disorder, social anxiety disorder, and specific phobia. Each item is rated on a 3-point scale.",
+      "keywords": [
+        {
+          "keyword": "childhood anxiety"
+        },
+        {
+          "keyword": "anxiety screening"
+        },
+        {
+          "keyword": "adolescent mental health"
+        },
+        {
+          "keyword": "anxiety disorders"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "SCARED - Child Version",
+    "full_name": "Screen for Child Anxiety Related Emotional Disorders - Child Self-Report",
+    "measurement_target": "Anxiety disorders in children and adolescents",
+    "num_items": 41,
+    "response_scale": "3-point Likert (0=Not true, 1=Somewhat true, 2=Very true)",
+    "score_range": "0-82",
+    "interpretation": "0-24: No anxiety; 25-49: Mild anxiety; 50-82: Moderate to severe anxiety",
+    "subscales": [
+      "Generalized Anxiety Disorder (9 items)",
+      "Social Phobia (7 items)",
+      "Separation Anxiety Disorder (8 items)",
+      "Specific Phobia (8 items)",
+      "Panic Disorder/Agoraphobia (13 items)"
+    ],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.80-0.90",
+      "validity": "Excellent discriminant and concurrent validity",
+      "sensitivity": "0.71-0.90",
+      "specificity": "0.72-0.87"
+    },
+    "populations": ["Children ages 8-18", "Adolescents", "Clinical samples"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "When my child gets scared, his/her heart beats fast",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 2,
+      "question_text": "I get scared if I sleep away from home",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 3,
+      "question_text": "I get headaches when I'm at school",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 4,
+      "question_text": "I don't like being with people I don't know well",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 5,
+      "question_text": "I get scared if I have to sleep alone",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 6,
+      "question_text": "I worry about other people liking me",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Anxiety Disorder"
+    },
+    {
+      "question_no": 7,
+      "question_text": "When I get scared, I feel like I might throw up",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 8,
+      "question_text": "I worry about being away from my parents",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 9,
+      "question_text": "I am scared of bugs and insects",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Specific Phobia"
+    },
+    {
+      "question_no": 10,
+      "question_text": "I am scared to go to school",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 11,
+      "question_text": "I worry that something bad might happen to my parents",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 12,
+      "question_text": "I feel shy with people I don't know well",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 13,
+      "question_text": "I worry about what other people think of me",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Anxiety Disorder"
+    },
+    {
+      "question_no": 14,
+      "question_text": "When I get scared, I feel like I have a hard time breathing",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 15,
+      "question_text": "I am scared of heights",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Specific Phobia"
+    },
+    {
+      "question_no": 16,
+      "question_text": "I worry about dying",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 17,
+      "question_text": "I see bad things happen in the future",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 18,
+      "question_text": "I worry about my school performance",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 19,
+      "question_text": "I should be perfect",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 20,
+      "question_text": "I worry about things working out for me",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 21,
+      "question_text": "I am a worrier",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 22,
+      "question_text": "I get really scared when I think about getting seriously ill",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 23,
+      "question_text": "When I get scared, I feel like passing out",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 24,
+      "question_text": "I worry about people laughing at me",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Anxiety Disorder"
+    },
+    {
+      "question_no": 25,
+      "question_text": "I have nightmares about something bad happening to me",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 26,
+      "question_text": "I worry about swimming in deep water",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Specific Phobia"
+    },
+    {
+      "question_no": 27,
+      "question_text": "My mind goes blank when I try to talk in front of people",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Anxiety Disorder"
+    },
+    {
+      "question_no": 28,
+      "question_text": "I am scared of the dark",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Specific Phobia"
+    },
+    {
+      "question_no": 29,
+      "question_text": "I am scared to be alone",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 30,
+      "question_text": "I don't like to be away from my family",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Separation Anxiety Disorder"
+    },
+    {
+      "question_no": 31,
+      "question_text": "I am scared of scary movies or TV shows",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Specific Phobia"
+    },
+    {
+      "question_no": 32,
+      "question_text": "I worry about getting good grades",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 33,
+      "question_text": "When I get scared, I feel shaky",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 34,
+      "question_text": "I have a hard time talking to people I don't know well",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Phobia"
+    },
+    {
+      "question_no": 35,
+      "question_text": "When I get scared, I feel like I'm going crazy",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 36,
+      "question_text": "I am scared of dogs",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Specific Phobia"
+    },
+    {
+      "question_no": 37,
+      "question_text": "I worry when I think I have done something wrong",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 38,
+      "question_text": "When I get scared, I sweat a lot",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    },
+    {
+      "question_no": 39,
+      "question_text": "I am scared to say things in class because the other children might laugh at me",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Social Anxiety Disorder"
+    },
+    {
+      "question_no": 40,
+      "question_text": "I worry about what is going to happen",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Generalized Anxiety Disorder"
+    },
+    {
+      "question_no": 41,
+      "question_text": "When I get scared, my heart beats fast",
+      "response_options": ["Not true", "Somewhat true", "Very true"],
+      "subscale": "Panic Disorder/Agoraphobia"
+    }
+  ]
+}

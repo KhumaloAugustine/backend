@@ -157,7 +157,8 @@ async def get_available_datasets(
         # Convert to response format
         datasets = []
         for study in all_studies:
-            datasets.append({
+            questions = study.get_questions()
+            dataset_dict = {
                 "id": study.study_id,
                 "name": study.title,
                 "type": "research_study",
@@ -165,7 +166,14 @@ async def get_available_datasets(
                 "keywords": study.keywords,
                 "producers": [p.get("name", "") for p in study.producers] if study.producers else [],
                 "date": study.prod_date
-            })
+            }
+            
+            # Add question count if available
+            if questions:
+                dataset_dict["total_questions"] = len(questions)
+                dataset_dict["language"] = study.metadata.get("doc_desc", {}).get("language", "English")
+            
+            datasets.append(dataset_dict)
         
         return {
             "count": len(datasets),

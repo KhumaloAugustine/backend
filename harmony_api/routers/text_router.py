@@ -55,6 +55,7 @@ from harmony_api import http_exceptions
 from harmony_api.core.settings import get_settings
 from harmony_api.services.instruments_cache import InstrumentsCache
 from harmony_api.services.vectors_cache import VectorsCache
+from harmony_api.services.mental_health_studies_loader import get_mental_health_studies_loader
 
 settings = get_settings()
 
@@ -451,3 +452,73 @@ def search_instruments(
 )
 def get_instruments_from_url(url: str) -> List[Instrument]:
     return load_instruments_from_url(url)
+
+
+@router.get(
+    path="/mental-health-instruments",
+    status_code=status.HTTP_200_OK,
+    response_model_exclude_none=True,
+    summary="Get all mental health instruments",
+    description="Get all mental health instruments (validated screening tools and study instruments) for harmonization"
+)
+def get_mental_health_instruments(
+    limit: int = Query(100, ge=1, le=500, description="Maximum results to return"),
+    search: str = Query(None, description="Optional search term")
+) -> List[Instrument]:
+    """
+    Get all mental health instruments for harmonization including:
+    - CES-D (Depression screening)
+    - GAD-7 (Anxiety screening)
+    - SCARED (Child anxiety)
+    - GHQ-12 (General health)
+    - De Jong Gierveld Loneliness Scale
+    - ASRS (Adult ADHD)
+    - McLean BPD Screening
+    - RCADS (Child anxiety and depression)
+    - MSPSS (Social support)
+    - PANAS (Positive/negative affect)
+    - And other mental health research studies
+    
+    Returns instruments that can be matched for harmonization.
+    """
+    try:
+        studies_loader = get_mental_health_studies_loader()
+        studies_loader.load_all_studies()
+        all_studies = studies_loader.get_all_studies()
+        
+        # Filter by search if provided
+        if search:
+            all_studies = [s for s in all_studies if search.lower() in s.get_searchable_text().lower()]
+        
+        # Limit results
+        all_studies = all_studies[:limit]
+        
+        # Convert studies to Instrument objects
+        instruments = []
+        for study in all_studies:
+            questions = study.get_questions()
+            
+            # Create Instrument object matching Harmony format
+            instrument = Instrument(
+                instrument_id=study.study_id,
+                instrument_name=study.title,
+                file_id=study.study_id,
+                file_name=study.title,
+                file_section=study.title,
+                file_type="mental_health_study",
+                language=study.metadata.get("doc_desc", {}).get("language", "en"),
+                questions=[
+                    {
+                        "question_no": str(q.get("question_no", "")),
+                        "question_text": q.get("question_text", ""),
+                        "options": q.get("response_options", [])
+                    }
+                    for q in questions
+                ] if questions else [],
+                study=study.title
+            )
+            instruments.append(instrument)
+        
+        return instruments
+    except Exception as e:
+        return []

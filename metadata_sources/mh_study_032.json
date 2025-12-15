@@ -1,0 +1,137 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.GHQ12",
+    "title": "GHQ-12 (General Health Questionnaire)",
+    "producers": [
+      {
+        "name": "Goldberg, D.",
+        "affiliation": "University of Manchester",
+        "role": "Original Developer"
+      }
+    ],
+    "prod_date": "1972",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.GHQ12",
+      "title": "GHQ-12: General Health Questionnaire",
+      "subtitle": "12-item screening tool for psychological distress"
+    },
+    "study_info": {
+      "abstract": "The GHQ-12 is a 12-item self-report screening instrument designed to identify psychological distress and minor psychiatric disorders. It assesses four dimensions: somatic symptoms, anxiety/insomnia, social dysfunction, and depression. The questionnaire is brief, reliable, and suitable for community surveys and clinical settings.",
+      "keywords": [
+        {
+          "keyword": "psychological distress"
+        },
+        {
+          "keyword": "mental health screening"
+        },
+        {
+          "keyword": "minor psychiatric disorders"
+        },
+        {
+          "keyword": "general health"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "GHQ-12",
+    "full_name": "General Health Questionnaire - 12 items",
+    "measurement_target": "Psychological distress and minor psychiatric disorders",
+    "num_items": 12,
+    "response_scale": "4-point Likert (Better than usual, Same as usual, Less than usual, Much less than usual)",
+    "score_range": "0-36 (binary: 0-12)",
+    "interpretation": "0-11: Good mental health; 12+: Possible psychological distress",
+    "subscales": [
+      "Somatic symptoms (2 items)",
+      "Anxiety/Insomnia (4 items)",
+      "Social dysfunction (3 items)",
+      "Depression (3 items)"
+    ],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.80-0.85",
+      "validity": "High sensitivity and specificity for psychiatric disorders",
+      "sensitivity": "0.75-0.85",
+      "specificity": "0.75-0.85"
+    },
+    "populations": ["General population", "Community samples", "Clinical settings"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Have you recently been able to concentrate on whatever you're doing?",
+      "response_options": ["Better than usual", "Same as usual", "Less than usual", "Much less than usual"],
+      "subscale": "Social dysfunction"
+    },
+    {
+      "question_no": 2,
+      "question_text": "Have you recently lost much sleep over worry?",
+      "response_options": ["Not at all", "No more than usual", "Rather more than usual", "Much more than usual"],
+      "subscale": "Anxiety/Insomnia"
+    },
+    {
+      "question_no": 3,
+      "question_text": "Have you recently felt that you are playing a useful part in things?",
+      "response_options": ["More than usual", "Same as usual", "Less than usual", "Much less than usual"],
+      "subscale": "Social dysfunction"
+    },
+    {
+      "question_no": 4,
+      "question_text": "Have you recently felt capable of making decisions about things?",
+      "response_options": ["More than usual", "Same as usual", "Less than usual", "Much less than usual"],
+      "subscale": "Social dysfunction"
+    },
+    {
+      "question_no": 5,
+      "question_text": "Have you recently felt constantly under strain?",
+      "response_options": ["Not at all", "No more than usual", "Rather more than usual", "Much more than usual"],
+      "subscale": "Anxiety/Insomnia"
+    },
+    {
+      "question_no": 6,
+      "question_text": "Have you recently felt you couldn't overcome your difficulties?",
+      "response_options": ["Not at all", "No more than usual", "Rather more than usual", "Much more than usual"],
+      "subscale": "Depression"
+    },
+    {
+      "question_no": 7,
+      "question_text": "Have you recently been able to enjoy your normal day-to-day activities?",
+      "response_options": ["More than usual", "Same as usual", "Less than usual", "Much less than usual"],
+      "subscale": "Depression"
+    },
+    {
+      "question_no": 8,
+      "question_text": "Have you recently been able to face up to your problems?",
+      "response_options": ["More than usual", "Same as usual", "Less than usual", "Much less than usual"],
+      "subscale": "Depression"
+    },
+    {
+      "question_no": 9,
+      "question_text": "Have you recently been feeling unhappy and depressed?",
+      "response_options": ["Not at all", "No more than usual", "Rather more than usual", "Much more than usual"],
+      "subscale": "Depression"
+    },
+    {
+      "question_no": 10,
+      "question_text": "Have you recently been losing confidence in yourself?",
+      "response_options": ["Not at all", "No more than usual", "Rather more than usual", "Much more than usual"],
+      "subscale": "Depression"
+    },
+    {
+      "question_no": 11,
+      "question_text": "Have you recently been thinking of yourself as a worthless person?",
+      "response_options": ["Not at all", "No more than usual", "Rather more than usual", "Much more than usual"],
+      "subscale": "Depression"
+    },
+    {
+      "question_no": 12,
+      "question_text": "Have you recently been feeling reasonably happy, all things considered?",
+      "response_options": ["More than usual", "Same as usual", "Less than usual", "Much less than usual"],
+      "subscale": "Depression"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.GAD7PT",
+    "title": "GAD-7 (Generalized Anxiety Disorder Scale) - Portuguese Version",
+    "producers": [
+      {
+        "name": "Spitzer, R.L., Kroenke, K., Williams, J.B.W.",
+        "affiliation": "Columbia University / Pfizer",
+        "role": "Original Developers - Portuguese Translation"
+      }
+    ],
+    "prod_date": "2006",
+    "language": "Portuguese",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.GAD7PT",
+      "title": "GAD-7: Generalized Anxiety Disorder Scale - Portuguese",
+      "subtitle": "7-item scale for generalized anxiety disorder screening in Portuguese-speaking populations"
+    },
+    "study_info": {
+      "abstract": "Portuguese translation of the GAD-7, a 7-item self-report questionnaire for screening and severity measurement of generalized anxiety disorder (GAD). Each item is rated on a 4-point Likert scale, measuring symptoms over the past two weeks. The Portuguese version has demonstrated excellent psychometric properties in Brazilian and Portuguese populations.",
+      "keywords": [
+        {
+          "keyword": "transtorno de ansiedade generalizada"
+        },
+        {
+          "keyword": "rastreamento de ansiedade"
+        },
+        {
+          "keyword": "saúde mental"
+        },
+        {
+          "keyword": "versão portuguesa"
+        }
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "GAD-7 Portuguese",
+    "full_name": "Generalized Anxiety Disorder Scale - Portuguese Version",
+    "measurement_target": "Generalized anxiety disorder severity",
+    "num_items": 7,
+    "response_scale": "4-point Likert (Nenhuma vez, Vários dias, Mais da metade dos dias, Quase todos os dias)",
+    "score_range": "0-21",
+    "interpretation": "0-4: Minimal anxiety; 5-9: Mild anxiety; 10-14: Moderate anxiety; 15-21: Severe anxiety",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.88-0.91",
+      "validity": "Good correlation with clinical GAD diagnosis in Portuguese populations",
+      "sensitivity": "0.86-0.89",
+      "specificity": "0.83-0.87"
+    },
+    "populations": ["Portuguese-speaking adults", "Brazilian population", "Portuguese population"],
+    "languages": ["Portuguese (Brazil and Portugal)"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Sentir-se nervoso, ansioso ou assustado",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Feeling nervous, anxious or on edge"
+    },
+    {
+      "question_no": 2,
+      "question_text": "Não conseguir parar ou controlar o preocupação",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Not being able to stop or control worrying"
+    },
+    {
+      "question_no": 3,
+      "question_text": "Preocupar-se excessivamente com diferentes coisas",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Worrying too much about different things"
+    },
+    {
+      "question_no": 4,
+      "question_text": "Ter dificuldade em relaxar",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Having trouble relaxing"
+    },
+    {
+      "question_no": 5,
+      "question_text": "Estar tão inquieto que fica difícil sentar quieto",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Being so restless that it is hard to sit still"
+    },
+    {
+      "question_no": 6,
+      "question_text": "Tornar-se facilmente irritado ou irritável",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Becoming easily annoyed or irritable"
+    },
+    {
+      "question_no": 7,
+      "question_text": "Sentir medo como se algo terrível possa acontecer",
+      "response_options": ["Nenhuma vez", "Vários dias", "Mais da metade dos dias", "Quase todos os dias"],
+      "english_translation": "Feeling afraid as if something awful might happen"
+    }
+  ]
+}
