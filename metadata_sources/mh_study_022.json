@@ -97,5 +97,107 @@
     "cutoff_scores": "31-33: Suggested cutoff for PTSD diagnosis",
     "reliability": "Cronbach's alpha 0.94",
     "validity": "Sensitivity 95%, Specificity 94% for PTSD diagnosis"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Repeated, disturbing, and unwanted memories of the stressful experience?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "Repeated, disturbing dreams related to the stressful experience?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "Suddenly feeling or acting as if the stressful experience were happening again (as if you were reliving it)?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "Feeling very upset when something reminded you of the stressful experience?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "Having strong physical reactions when something reminded you of the stressful experience (for example, heart pounding, sweating, trembling)?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Avoiding memories, thoughts, or feelings related to the stressful experience?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Avoiding external reminders of the stressful experience (for example, places, people, activities, objects, or situations)?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "Trouble remembering important parts of the stressful experience?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Strong negative beliefs about yourself, other people, or the world (for example, thinking 'I am bad,' 'people can't be trusted,' or 'the world is completely dangerous')?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "Blaming yourself or someone else for the stressful experience or what happened after it?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "Negative feelings such as fear, anger, guilt, or shame?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "Loss of interest in activities that you used to enjoy?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "Feeling distant or cut off from other people?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "Difficulty experiencing positive emotions (for example, unable to feel happiness or have loving feelings for people close to you)?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "Irritable or aggressive behavior?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 16,
+      "question_text": "Taking excessive risks or doing things that could cause you harm?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 17,
+      "question_text": "Being 'jumpy' or easily startled?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 18,
+      "question_text": "Having difficulty concentrating?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 19,
+      "question_text": "Difficulty falling or staying asleep?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    },
+    {
+      "question_no": 20,
+      "question_text": "In the past month, how much have these problems interfered with your work, school, family, or social life?",
+      "response_options": ["Not at all", "A little bit", "Moderately", "Quite a bit", "Extremely"]
+    }
+  ]
 }

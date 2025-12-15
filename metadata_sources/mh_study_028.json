@@ -91,5 +91,82 @@
     "response_scale": "Yes/No",
     "reliability": "Cronbach's alpha 0.88",
     "validity": "Sensitivity 92%, Specificity 87% for PTSD"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Have you ever experienced or witnessed a serious accident, physical assault, sexual assault, serious injury, serious illness, or death?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "Have you experienced or witnessed violence in your neighborhood, school, or home?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "Have you been separated from your family due to disaster, war, or violence?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "Have you experienced neglect or abuse?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "When something reminds you of the bad experience(s), do you suddenly act or feel as though it is happening again?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Do you have repeated bad dreams or nightmares?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Do you try hard not to think about the bad experience(s) or do you avoid people, places, or activities that remind you of it?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "Are you always alert or on guard?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Do you get angry quickly or act without thinking?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "Do you have trouble paying attention or do you daydream more than before?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "Do you feel scared or anxious?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "Do you have trouble sleeping?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "Do you feel detached or separated from family and friends?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "Do you feel that part of you died along with the bad experience?",
+      "response_options": ["No", "Yes"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "Do you feel sad or hopeless?",
+      "response_options": ["No", "Yes"]
+    }
+  ]
 }

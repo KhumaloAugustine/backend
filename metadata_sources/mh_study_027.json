@@ -96,5 +96,57 @@
     "total_score_range": "0-40",
     "reliability": "Cronbach's alpha 0.78",
     "validity": "Highly correlated with psychological and physical health outcomes"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "In the last month, how often have you been upset because of something that happened unexpectedly?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "In the last month, how often have you felt unable to control the important things in your life?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "In the last month, how often have you felt nervous and stressed?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "In the last month, how often have you felt confident about your ability to handle your personal problems?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "In the last month, how often have you felt that things were going your way?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "In the last month, how often have you found that you could not cope with all the things that you had to do?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "In the last month, how often have you been able to control irritations in your life?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "In the last month, how often have you felt that you were on top of things?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "In the last month, how often have you been angered because of things that were outside of your control?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?",
+      "response_options": ["Never", "Almost never", "Sometimes", "Fairly often", "Very often"]
+    }
+  ]
 }

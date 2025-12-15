@@ -97,5 +97,52 @@
     "cutoff_scores": "5-9: Mild, 10-14: Moderate, 15-19: Moderately Severe, 20-27: Severe",
     "reliability": "Cronbach's alpha 0.89",
     "validity": "Sensitivity 88%, Specificity 88% for depression"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Little interest or pleasure in doing things",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "Feeling down, depressed, or hopeless",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "Trouble falling or staying asleep, or sleeping too much",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "Feeling tired or having little energy",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "Poor appetite or overeating",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Feeling bad about yourself or that you are a failure or have let your family down",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "Moving or speaking so slowly that others have noticed? Or being so fidgety or restless that you have been moving much more than usual?",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Thoughts that you would be better off dead, or of hurting yourself in some way",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    }
+  ]
 }

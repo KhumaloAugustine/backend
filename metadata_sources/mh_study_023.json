@@ -86,5 +86,57 @@
     "total_score_range": "10-40",
     "reliability": "Cronbach's alpha 0.81-0.85",
     "validity": "Highly correlated with other measures of self-esteem"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "I feel that I am a person of worth, at least on an equal plane with others",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "I feel that I have a number of good qualities",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "All in all, I am inclined to feel that I am a failure",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "I am able to do things as well as most other people",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "I feel I do not have much to be proud of",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "I take a positive attitude toward myself",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "On the whole, I am satisfied with myself",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "I wish I could have more respect for myself",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "I certainly feel useless at times",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "At times I think I am no good at all",
+      "response_options": ["Strongly Disagree", "Disagree", "Agree", "Strongly Agree"]
+    }
+  ]
 }

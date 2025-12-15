@@ -87,5 +87,79 @@
     "domains": ["Cognition", "Mobility", "Self-care", "Getting along", "Work/household", "Community participation"],
     "reliability": "Cronbach's alpha 0.84",
     "validity": "Good correlation with clinical outcome measures"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "In the past 30 days, how much difficulty did you have in concentrating or remembering things?",
+      "domain": "Cognition",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "In the past 30 days, how much difficulty did you have in walking or climbing stairs?",
+      "domain": "Mobility",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "In the past 30 days, how much difficulty did you have in washing your whole body?",
+      "domain": "Self-care",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "In the past 30 days, how much difficulty did you have in getting dressed?",
+      "domain": "Self-care",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "In the past 30 days, how much difficulty did you have in dealing with people you do not know?",
+      "domain": "Getting along",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "In the past 30 days, how much difficulty did you have in maintaining a friendship?",
+      "domain": "Getting along",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "In the past 30 days, how much difficulty did you have in your day-to-day work or school?",
+      "domain": "Work/household",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "In the past 30 days, how much difficulty did you have in household responsibilities?",
+      "domain": "Work/household",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "In the past 30 days, how much difficulty did you have in participating in community activities?",
+      "domain": "Community participation",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "In the past 30 days, how much difficulty did you have due to barriers or prejudice?",
+      "domain": "Community participation",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "In the past 30 days, how much time did you spend on your health problem or its consequences?",
+      "domain": "Community participation",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "In the past 30 days, how much difficulty did you have in doing things by yourself for relaxation or pleasure?",
+      "domain": "Community participation",
+      "response_options": ["None", "Mild", "Moderate", "Severe", "Extreme"]
+    }
+  ]
 }

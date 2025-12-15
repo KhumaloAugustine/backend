@@ -97,5 +97,42 @@
     "cutoff_scores": "5-9: Mild, 10-14: Moderate, 15-21: Severe",
     "reliability": "Cronbach's alpha 0.92",
     "validity": "Sensitivity 89%, Specificity 86% for generalized anxiety disorder"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Feeling nervous, anxious, or on edge",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "Not being able to stop or control worrying",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "Worrying too much about different things",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "Trouble relaxing",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "Being so restless that it is hard to sit still",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Becoming easily annoyed or irritable",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Feeling afraid, as if something awful might happen",
+      "response_options": ["Not at all", "Several days", "More than half the days", "Nearly every day"]
+    }
+  ]
 }

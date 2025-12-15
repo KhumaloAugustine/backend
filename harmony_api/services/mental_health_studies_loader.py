@@ -41,6 +41,10 @@ class MentalHealthStudy:
         method = self.data_collection[0] if self.data_collection else {}
         self.data_collection_date = method.get("data_collection_date", "")
         self.collection_mode = method.get("collection_mode", [])
+        
+        # Extract questions if available (for instruments with survey items)
+        self.questions = self.metadata.get("questions", [])
+        self.instrument_details = self.metadata.get("instrument_details", {})
     
     def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary representation"""
@@ -69,6 +73,31 @@ class MentalHealthStudy:
     def get_constructs(self) -> List[str]:
         """Extract mental health constructs/keywords from study"""
         return self.keywords
+    
+    def get_questions(self) -> List[Dict[str, Any]]:
+        """Get all questions/items from the instrument"""
+        return self.questions
+    
+    def get_questions_as_text(self) -> List[str]:
+        """Get all questions as text strings for matching"""
+        return [q.get("question_text", "") for q in self.questions if q.get("question_text")]
+    
+    def get_full_summary(self) -> str:
+        """Get comprehensive summary including title, abstract, and questions"""
+        summary_parts = [
+            f"Title: {self.title}",
+            f"Abstract: {self.abstract}",
+            f"Keywords: {', '.join(self.keywords)}"
+        ]
+        
+        if self.questions:
+            summary_parts.append(f"Questions ({len(self.questions)} items):")
+            for q in self.questions:
+                q_no = q.get("question_no", "")
+                q_text = q.get("question_text", "")
+                summary_parts.append(f"  {q_no}. {q_text}")
+        
+        return "\n".join(summary_parts)
 
 
 class MentalHealthStudiesLoader:

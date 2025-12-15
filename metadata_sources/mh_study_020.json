@@ -97,5 +97,57 @@
     "cutoff_scores": ">5: Poor sleep quality",
     "reliability": "Cronbach's alpha 0.85",
     "validity": "Sensitivity 89.6%, Specificity 86.5% for sleep disorders"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "What time have you usually gone to bed at night during the past month?",
+      "response_options": ["Bedtime response"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "How long (in minutes) has it usually taken you to fall asleep each night during the past month?",
+      "response_options": ["Number of minutes"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "What time have you usually gotten up in the morning during the past month?",
+      "response_options": ["Wake time response"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "How many hours of actual sleep did you get at night? (This may be different than the number of hours you spent in bed)",
+      "response_options": ["Number of hours"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "Cannot get to sleep within 30 minutes",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Wake up in the middle of the night or early morning",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Have to get up to use the bathroom",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "Cannot breathe comfortably",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Cough or snore loudly",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "Feel too cold",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    }
+  ]
 }

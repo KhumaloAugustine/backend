@@ -93,5 +93,133 @@
     "subscale_score_range": "0-21 per subscale",
     "reliability": "Cronbach's alpha 0.88-0.91",
     "validity": "Good discriminant validity between depression, anxiety, and stress"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "I found it hard to wind down",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "I was aware of dryness of my mouth",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "I couldn't seem to experience any positive feeling at all",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "I experienced breathing difficulty",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "I found it difficult to work up the initiative to do things",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "I tended to over-react to situations",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "I experienced trembling",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "I was worried about situations in which I might panic",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "I was unable to relax",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "I felt downhearted and blue",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "I was intolerant of anything that kept me from getting on with what I was doing",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "I felt I was close to panic",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "I was unable to become enthusiastic about anything",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "I felt I wasn't worth much as a person",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "I was aware of the action of my heart in the absence of physical exertion",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 16,
+      "question_text": "I felt scared without any good reason",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 17,
+      "question_text": "I felt that life was meaningless",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 18,
+      "question_text": "I found myself getting agitated",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 19,
+      "question_text": "I found it difficult to settle down",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 20,
+      "question_text": "I could not experience good feelings",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    },
+    {
+      "question_no": 21,
+      "question_text": "I was afraid of losing control",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me to some degree", "Applied to me a considerable degree", "Applied to me very much"]
+    }
+  ]
 }

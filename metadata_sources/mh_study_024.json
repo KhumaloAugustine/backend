@@ -91,5 +91,22 @@
     "total_score_range": "3-9",
     "reliability": "Cronbach's alpha 0.72",
     "validity": "Strongly associated with depression and anxiety"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "How often do you feel that you lack companionship?",
+      "response_options": ["Hardly ever", "Some of the time", "Often"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "How often do you feel left out?",
+      "response_options": ["Hardly ever", "Some of the time", "Often"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "How often do you feel isolated from others?",
+      "response_options": ["Hardly ever", "Some of the time", "Often"]
+    }
+  ]
 }

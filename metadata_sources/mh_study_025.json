@@ -92,5 +92,112 @@
     "cutoff_scores": "0-21: Minimal, 22-35: Mild, 36-50: Moderate, 51-63: Severe",
     "reliability": "Cronbach's alpha 0.92",
     "validity": "Sensitivity 79%, Specificity 90% for panic disorder"
-  }
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Numbness or tingling",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "Feeling hot",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "Wobbliness in legs",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "Unable to relax",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "Fear of worst happening",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "Dizzy or lightheaded",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "Heart pounding or racing",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "Unsteady",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Terrified or afraid",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "Nervous",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "Feeling of choking",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "Hands trembling",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "Shaky or unstable",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "Fear of dying",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "Indigestion",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 16,
+      "question_text": "Faint or lightheaded",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 17,
+      "question_text": "Face flushed",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 18,
+      "question_text": "Sweating (not due to heat)",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 19,
+      "question_text": "Feeling scared",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 20,
+      "question_text": "Difficulty in concentrating",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    },
+    {
+      "question_no": 21,
+      "question_text": "Fear of losing control",
+      "response_options": ["Not at all", "Mildly but didn't bother me", "Moderately and was very unpleasant", "Severely and was very unpleasant"]
+    }
+  ]
 }
