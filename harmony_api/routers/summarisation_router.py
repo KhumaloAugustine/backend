@@ -331,6 +331,114 @@ async def get_study_abstract(study_id: str):
     }
 
 
+@router.get(
+    path="/studies/{study_id}/questions",
+    summary="Get all questions from a mental health instrument",
+    description="Retrieve all questions/items from a mental health screening instrument or questionnaire"
+)
+async def get_study_questions(study_id: str):
+    """
+    Get all questions/items from a mental health study or instrument.
+    
+    This endpoint returns the complete questionnaire with all items, response options,
+    and scoring information where available.
+    
+    Example: GET /summarise/studies/mh_study_018/questions
+    Returns: PHQ-9 with 9 depression screening items
+    """
+    study = studies_loader.get_study(study_id)
+    
+    if not study:
+        return {"error": f"Study {study_id} not found"}, status.HTTP_404_NOT_FOUND
+    
+    questions = study.get_questions()
+    
+    if not questions:
+        return {
+            "study_id": study_id,
+            "title": study.title,
+            "message": "No structured questions available for this study",
+            "questions": []
+        }
+    
+    return {
+        "study_id": study_id,
+        "title": study.title,
+        "abstract": study.abstract,
+        "total_items": len(questions),
+        "keywords": study.keywords,
+        "questions": questions,
+        "instrument_details": study.instrument_details
+    }
+
+
+@router.get(
+    path="/available-studies/with-questions",
+    summary="List all studies with their questions",
+    description="Get all available studies including their embedded questions/items"
+)
+async def get_available_studies_with_questions(
+    limit: int = Query(100, ge=1, le=500, description="Maximum results to return"),
+    search: str = Query(None, description="Optional search term")
+):
+    """
+    List all available mental health studies with their embedded questions.
+    Perfect for displaying complete questionnaires for review and summarization.
+    
+    Each study includes:
+    - Title and abstract
+    - All questions/items
+    - Response options for each question
+    - Psychometric details
+    """
+    try:
+        # Load mental health studies
+        studies_loader.load_all_studies()
+        all_studies = studies_loader.get_all_studies()
+        
+        # Filter by search if provided
+        if search:
+            all_studies = [s for s in all_studies if search.lower() in s.get_searchable_text().lower()]
+        
+        # Limit results
+        all_studies = all_studies[:limit]
+        
+        # Convert to response format including questions
+        studies = []
+        for study in all_studies:
+            study_dict = {
+                "study_id": study.study_id,
+                "title": study.title,
+                "abstract": study.abstract[:300] + "..." if len(study.abstract) > 300 else study.abstract,
+                "keywords": study.keywords,
+                "producers": [p.get("name", "") for p in study.producers] if study.producers else [],
+                "date": study.prod_date,
+                "type": "research_study",
+                "total_questions": len(study.get_questions())
+            }
+            
+            # Include questions if available
+            questions = study.get_questions()
+            if questions:
+                study_dict["questions"] = questions
+                study_dict["instrument_details"] = study.instrument_details
+            
+            studies.append(study_dict)
+        
+        return {
+            "count": len(studies),
+            "total_available": len(all_studies),
+            "studies": studies
+        }
+    except Exception as e:
+        return {
+            "count": 0,
+            "total_available": 0,
+            "studies": [],
+            "error": str(e)
+        }, status.HTTP_200_OK
+
+
 @router.post(
     path="/studies/{study_id}/summarize",
     status_code=status.HTTP_200_OK,
