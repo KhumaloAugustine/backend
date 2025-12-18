@@ -1,0 +1,112 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.CORE10",
+    "title": "CORE-10 (Clinical Outcomes in Routine Evaluation)",
+    "producers": [
+      {
+        "name": "Barkham, M., Mullin, T., Connell, J., et al.",
+        "affiliation": "University of Sheffield",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "2012",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.CORE10",
+      "title": "CORE-10: Clinical Outcomes in Routine Evaluation",
+      "subtitle": "10-item self-report outcome measure for psychological distress"
+    },
+    "study_info": {
+      "abstract": "The CORE-10 is a brief 10-item self-report measure of psychological distress and wellbeing. It assesses general mental health, functioning, and risk. Widely used in UK routine outcome monitoring for counseling and psychotherapy services. Items are rated on a 5-point frequency scale over the past week.",
+      "keywords": [
+        {"keyword": "psychological distress"},
+        {"keyword": "wellbeing"},
+        {"keyword": "outcome monitoring"},
+        {"keyword": "mental health screening"},
+        {"keyword": "therapy outcome"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "CORE-10",
+    "full_name": "Clinical Outcomes in Routine Evaluation - 10 items",
+    "measurement_target": "Psychological distress and wellbeing",
+    "num_items": 10,
+    "response_scale": "5-point Likert (0=Not at all, 4=All the time)",
+    "score_range": "0-40",
+    "interpretation": "0-9: Healthy; 10-14: Low level of distress; 15-19: Moderate distress; 20-24: Moderate to severe distress; 25+: Severe distress",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.94",
+      "validity": "Good sensitivity to change and discrimination between clinical and non-clinical populations",
+      "sensitivity": "0.94",
+      "specificity": "0.87"
+    },
+    "populations": ["General population", "Therapy clients", "Clinical samples"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "I have felt tense, anxious or nervous",
+      "domain": "Anxiety/Distress",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "I have felt I have had someone to talk to about things that matter to me",
+      "domain": "Support/Relationships",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "I have felt able to cope when things go wrong",
+      "domain": "Coping/Functioning",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "I have been troubled by aches, pains or other physical problems",
+      "domain": "Physical Health",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "I have had trouble with sleep",
+      "domain": "Sleep",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "I have felt unhappy or depressed",
+      "domain": "Depression",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "I have had difficulty with concentration",
+      "domain": "Cognitive Function",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "I have felt able to make decisions about important things",
+      "domain": "Functioning",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "I have had feelings I could not control",
+      "domain": "Emotional Regulation",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "I have felt I have no reason for being",
+      "domain": "Meaning/Worth",
+      "response_options": ["Not at all", "Only occasionally", "Sometimes", "Often", "All the time"]
+    }
+  ]
+}

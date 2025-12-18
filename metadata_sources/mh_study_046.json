@@ -1,0 +1,173 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.LSAS",
+    "title": "LSAS (Liebowitz Social Anxiety Scale)",
+    "producers": [
+      {
+        "name": "Liebowitz, M. R.",
+        "affiliation": "New York State Psychiatric Institute",
+        "role": "Original Developer"
+      }
+    ],
+    "prod_date": "1987",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.LSAS",
+      "title": "LSAS: Liebowitz Social Anxiety Scale",
+      "subtitle": "24-item self-report measure of social anxiety"
+    },
+    "study_info": {
+      "abstract": "The LSAS is a 24-item self-report instrument designed to assess fear and avoidance associated with social interactions and public performance situations. It is widely used for assessing social anxiety disorder and monitoring treatment response. Each item is rated on separate scales for fear and avoidance.",
+      "keywords": [
+        {"keyword": "social anxiety"},
+        {"keyword": "social phobia"},
+        {"keyword": "anxiety disorders"},
+        {"keyword": "social functioning"},
+        {"keyword": "performance anxiety"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "LSAS",
+    "full_name": "Liebowitz Social Anxiety Scale - 24 items",
+    "measurement_target": "Social anxiety disorder and social anxiety symptoms",
+    "num_items": 24,
+    "response_scale": "4-point Likert for Fear (0=None, 3=Severe) and Avoidance (0=Never, 3=Usually)",
+    "score_range": "0-144",
+    "interpretation": "0-30: Mild social anxiety; 31-60: Moderate; 61-90: Marked; 91-144: Severe",
+    "subscales": ["Fear/Anxiety (24 items)", "Avoidance (24 items)"],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.95",
+      "validity": "High correlation with social anxiety disorder diagnosis",
+      "sensitivity": "0.92-0.98",
+      "specificity": "0.92-0.97"
+    },
+    "populations": ["Individuals with social anxiety", "Clinical samples", "Adolescents and adults"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "Telephoning in public",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 2,
+      "question_text": "Participating in small groups",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 3,
+      "question_text": "Eating in public places",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 4,
+      "question_text": "Drinking with others in public places",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 5,
+      "question_text": "Talking to people you don't know well",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 6,
+      "question_text": "Meeting strangers",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 7,
+      "question_text": "Attending parties and social events",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 8,
+      "question_text": "Giving a prepared talk to a group",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 9,
+      "question_text": "Giving a spontaneous talk in a group",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 10,
+      "question_text": "Making eye contact with people you know",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 11,
+      "question_text": "Being the center of attention",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 12,
+      "question_text": "Speaking up at a meeting or in class",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 13,
+      "question_text": "Taking a test",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 14,
+      "question_text": "Expressing disagreement or disapproval to people you don't know well",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 15,
+      "question_text": "Looking at people in the eyes",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 16,
+      "question_text": "Mixing socially",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 17,
+      "question_text": "Being evaluated",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 18,
+      "question_text": "Being watched or observed while working",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 19,
+      "question_text": "Entering a room when others are already seated",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 20,
+      "question_text": "Resisting salespeople or telemarketers",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 21,
+      "question_text": "Returning goods to a store",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 22,
+      "question_text": "Making complaints to people in authority",
+      "domain": "Social Interaction"
+    },
+    {
+      "question_no": 23,
+      "question_text": "Class participation",
+      "domain": "Performance/Public Speaking"
+    },
+    {
+      "question_no": 24,
+      "question_text": "Working while being observed",
+      "domain": "Performance/Public Speaking"
+    }
+  ]
+}

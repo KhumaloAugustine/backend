@@ -1,0 +1,203 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.SDQ",
+    "title": "SDQ (Strength and Difficulties Questionnaire)",
+    "producers": [
+      {
+        "name": "Goodman, R.",
+        "affiliation": "Institute of Psychiatry, King's College London",
+        "role": "Original Developer"
+      }
+    ],
+    "prod_date": "1997",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.SDQ",
+      "title": "SDQ: Strength and Difficulties Questionnaire",
+      "subtitle": "25-item behavioral and emotional screening tool for children and youth"
+    },
+    "study_info": {
+      "abstract": "The SDQ is a 25-item brief behavioral and emotional screening questionnaire for children aged 4-17 years. It measures both strengths and difficulties across five subscales: emotional symptoms, conduct problems, hyperactivity/inattention, peer problems, and prosocial behavior. Available in multiple languages and formats (self-report, parent, teacher).",
+      "keywords": [
+        {"keyword": "child behavioral assessment"},
+        {"keyword": "emotional difficulties"},
+        {"keyword": "conduct problems"},
+        {"keyword": "ADHD screening"},
+        {"keyword": "childhood mental health"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "SDQ",
+    "full_name": "Strength and Difficulties Questionnaire - 25 items",
+    "measurement_target": "Behavioral and emotional difficulties in children and youth",
+    "num_items": 25,
+    "response_scale": "3-point Likert (0=Not true, 1=Somewhat true, 2=Certainly true)",
+    "score_range": "0-40 (40 for total difficulties)",
+    "subscales": ["Emotional Symptoms (5 items)", "Conduct Problems (5 items)", "Hyperactivity/Inattention (5 items)", "Peer Problems (5 items)", "Prosocial Behavior (5 items)"],
+    "interpretation": "Normal 0-13; Borderline 14-16; Abnormal 17-40 (for total difficulties score)",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.73",
+      "validity": "Good discriminative validity for DSM diagnoses",
+      "sensitivity": "0.70-0.75",
+      "specificity": "0.95"
+    },
+    "populations": ["Children aged 4-17 years", "Clinical and community samples"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "subscale": "Emotional Symptoms",
+      "question_text": "I get a lot of headaches, stomach-aches or sickness",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 2,
+      "subscale": "Conduct Problems",
+      "question_text": "I worry a lot",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 3,
+      "subscale": "Prosocial Behavior",
+      "question_text": "I am helpful if someone is hurt, upset or feeling ill",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 4,
+      "subscale": "Conduct Problems",
+      "question_text": "I usually do as I am told",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 5,
+      "subscale": "Peer Problems",
+      "question_text": "I worry when I have to face new people",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 6,
+      "subscale": "Prosocial Behavior",
+      "question_text": "Other people my age generally like me",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 7,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I get very angry and often lose my temper",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 8,
+      "subscale": "Prosocial Behavior",
+      "question_text": "I usually keep my promises",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 9,
+      "subscale": "Emotional Symptoms",
+      "question_text": "I am often unhappy, depressed or tearful",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 10,
+      "subscale": "Peer Problems",
+      "question_text": "I am usually on my own",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 11,
+      "subscale": "Conduct Problems",
+      "question_text": "I fight a lot with other children my age",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 12,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I am often accused of lying or cheating",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 13,
+      "subscale": "Peer Problems",
+      "question_text": "Other children pick on me or bully me",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 14,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I often volunteer to help others",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 15,
+      "subscale": "Emotional Symptoms",
+      "question_text": "I am nervous in new situations",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 16,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I have many fears, I am easily scared",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 17,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I finish the work I'm doing",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 18,
+      "subscale": "Prosocial Behavior",
+      "question_text": "I am kind to younger children",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 19,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I am easily distracted, I find it difficult to concentrate",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 20,
+      "subscale": "Conduct Problems",
+      "question_text": "My feelings are easily hurt",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 21,
+      "subscale": "Prosocial Behavior",
+      "question_text": "I am able to be calm down when upset",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 22,
+      "subscale": "Conduct Problems",
+      "question_text": "I say unkind things to others",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 23,
+      "subscale": "Peer Problems",
+      "question_text": "I get along better with adults than with people my own age",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 24,
+      "subscale": "Hyperactivity/Inattention",
+      "question_text": "I have a lot of worries, or often seem worried",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    },
+    {
+      "question_no": 25,
+      "subscale": "Prosocial Behavior",
+      "question_text": "I think before I do things",
+      "response_options": ["Not true", "Somewhat true", "Certainly true"]
+    }
+  ]
+}

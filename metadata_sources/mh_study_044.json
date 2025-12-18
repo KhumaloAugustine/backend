@@ -1,0 +1,102 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.AUDIT",
+    "title": "AUDIT (Alcohol Use Disorders Identification Test)",
+    "producers": [
+      {
+        "name": "Saunders, J. B., Aasland, O. G., Babor, T. F., de la Fuente, J. R., Grant, M.",
+        "affiliation": "World Health Organization",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1993",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.AUDIT",
+      "title": "AUDIT: Alcohol Use Disorders Identification Test",
+      "subtitle": "10-item self-report measure of problematic alcohol use"
+    },
+    "study_info": {
+      "abstract": "The AUDIT is a 10-item self-report screening instrument developed by the World Health Organization to identify individuals with hazardous and harmful patterns of alcohol use. Items assess alcohol consumption, dependence, and negative consequences. Used in clinical, research, and primary care settings for screening and brief intervention.",
+      "keywords": [
+        {"keyword": "alcohol screening"},
+        {"keyword": "substance use disorders"},
+        {"keyword": "alcohol dependence"},
+        {"keyword": "health risk behavior"},
+        {"keyword": "brief intervention"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "AUDIT",
+    "full_name": "Alcohol Use Disorders Identification Test - 10 items",
+    "measurement_target": "Alcohol use disorders and hazardous drinking",
+    "num_items": 10,
+    "response_scale": "Variable (0-4 per item depending on item type)",
+    "score_range": "0-40",
+    "interpretation": "0-7: Low risk; 8-15: Hazardous use; 16-19: Harmful use; 20+: Possible alcohol dependence",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.80-0.83",
+      "validity": "High sensitivity and specificity for alcohol use disorders",
+      "sensitivity": "0.94-0.97",
+      "specificity": "0.83-0.94"
+    },
+    "populations": ["General population", "Primary care patients", "Clinical samples", "Substance use disorders"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "How often do you have a drink containing alcohol?",
+      "response_options": ["Never", "Monthly or less", "2-4 times a month", "2-3 times a week", "4 or more times a week"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "How many drinks containing alcohol do you have on a typical day when you are drinking?",
+      "response_options": ["1 or 2", "3 or 4", "5 or 6", "7 to 9", "10 or more"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "How often do you have six or more drinks on a single occasion?",
+      "response_options": ["Never", "Less than monthly", "Monthly", "Weekly", "Daily or almost daily"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "How often during the last year have you found that you were unable to stop drinking once you had started?",
+      "response_options": ["Never", "Less than monthly", "Monthly", "Weekly", "Daily or almost daily"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "How often during the last year have you failed to do what was normally expected of you because of drinking?",
+      "response_options": ["Never", "Less than monthly", "Monthly", "Weekly", "Daily or almost daily"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "How often during the last year have you needed a first drink in the morning to get yourself going after a heavy drinking session?",
+      "response_options": ["Never", "Less than monthly", "Monthly", "Weekly", "Daily or almost daily"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "How often during the last year have you had a feeling of guilt or remorse after drinking?",
+      "response_options": ["Never", "Less than monthly", "Monthly", "Weekly", "Daily or almost daily"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "How often during the last year have you been unable to remember what happened the night before because you had been drinking?",
+      "response_options": ["Never", "Less than monthly", "Monthly", "Weekly", "Daily or almost daily"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "Have you or someone else been injured as a result of your drinking?",
+      "response_options": ["No", "Yes, but not in the last year", "Yes, during the last year"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "Has a doctor or other health worker expressed concern about your drinking or suggested you cut down?",
+      "response_options": ["No", "Yes, but not in the last year", "Yes, during the last year"]
+    }
+  ]
+}

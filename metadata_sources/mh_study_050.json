@@ -1,0 +1,160 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.BPRS",
+    "title": "BPRS (Brief Psychiatric Rating Scale)",
+    "producers": [
+      {
+        "name": "Overall, J. E., Gorham, D. R.",
+        "affiliation": "National Institute of Mental Health",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1962",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.BPRS",
+      "title": "BPRS: Brief Psychiatric Rating Scale",
+      "subtitle": "18-item clinician-rated measure of psychiatric symptoms"
+    },
+    "study_info": {
+      "abstract": "The BPRS is an 18-item clinician-rated scale designed to assess the severity of psychiatric symptoms in adolescents and adults. Items assess both positive symptoms (hallucinations, delusions) and negative symptoms (emotional withdrawal, blunted affect). Widely used in clinical research and treatment monitoring for psychotic disorders.",
+      "keywords": [
+        {"keyword": "psychiatric symptoms"},
+        {"keyword": "psychotic disorders"},
+        {"keyword": "schizophrenia"},
+        {"keyword": "positive symptoms"},
+        {"keyword": "negative symptoms"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "BPRS",
+    "full_name": "Brief Psychiatric Rating Scale - 18 items",
+    "measurement_target": "Psychiatric symptom severity",
+    "num_items": 18,
+    "response_scale": "7-point Likert (1=Not assessed to 7=Extremely severe)",
+    "score_range": "18-126",
+    "subscales": ["Positive Symptoms", "Negative Symptoms", "Depressive Symptoms", "Manic Symptoms"],
+    "interpretation": "18-39: Minimally symptomatic; 40-60: Mildly symptomatic; 61-80: Moderately symptomatic; 80+: Severely symptomatic",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.60-0.77",
+      "validity": "Good agreement with clinical diagnoses",
+      "sensitivity": "Variable by symptom domain"
+    },
+    "populations": ["Individuals with psychotic disorders", "Clinical samples", "Adolescents and adults"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "subscale": "Positive Symptoms",
+      "question_text": "Somatic concern - degree to which physical health is perceived as poor",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 2,
+      "subscale": "Positive Symptoms",
+      "question_text": "Anxiety - worry, fear, or overconcern for present or future",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 3,
+      "subscale": "Depressive Symptoms",
+      "question_text": "Depression - sadness, hopelessness, discourage or irritability",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 4,
+      "subscale": "Positive Symptoms",
+      "question_text": "Suicidality - expressed desire, intent, or actions to harm self",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 5,
+      "subscale": "Positive Symptoms",
+      "question_text": "Affect unreality - feeling of detachment from self or surroundings",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 6,
+      "subscale": "Positive Symptoms",
+      "question_text": "Guilt - sense of remorse or self blame",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 7,
+      "subscale": "Positive Symptoms",
+      "question_text": "Hostility - animosity, contempt, belligerence, disdain",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 8,
+      "subscale": "Negative Symptoms",
+      "question_text": "Elevated mood - euphoria, expansiveness, exaggerated self-esteem",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 9,
+      "subscale": "Positive Symptoms",
+      "question_text": "Grandiosity - exaggerated self-importance or abilities",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 10,
+      "subscale": "Positive Symptoms",
+      "question_text": "Suspiciousness - guardedness or belief that others mean harm",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 11,
+      "subscale": "Positive Symptoms",
+      "question_text": "Hallucinations - reports of perceptions without external stimuli",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 12,
+      "subscale": "Positive Symptoms",
+      "question_text": "Unusual thought content - strange, bizarre, or queer thoughts",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 13,
+      "subscale": "Negative Symptoms",
+      "question_text": "Emotional withdrawal - lack of spontaneity and flow of conversation",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 14,
+      "subscale": "Negative Symptoms",
+      "question_text": "Motor retardation - slowed movements or speech, reduced activity",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 15,
+      "subscale": "Negative Symptoms",
+      "question_text": "Tension - physical and mental tension, nervous energy",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 16,
+      "subscale": "Negative Symptoms",
+      "question_text": "Uncooperativeness - resistance to staff or procedures",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 17,
+      "subscale": "Positive Symptoms",
+      "question_text": "Excitement - heightened emotional tone, increased reactivity",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    },
+    {
+      "question_no": 18,
+      "subscale": "Negative Symptoms",
+      "question_text": "Distractibility - inability to maintain attention, easily sidetracked",
+      "response_options": ["Not assessed", "Not present", "Very mild", "Mild", "Moderate", "Moderately severe", "Extremely severe"]
+    }
+  ]
+}

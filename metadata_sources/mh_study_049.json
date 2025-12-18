@@ -1,0 +1,167 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.PSQI",
+    "title": "PSQI (Pittsburgh Sleep Quality Index)",
+    "producers": [
+      {
+        "name": "Buysse, D. J., Reynolds, C. F., Monk, T. H., Berman, S. R., Kupfer, D. J.",
+        "affiliation": "University of Pittsburgh",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1989",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.PSQI",
+      "title": "PSQI: Pittsburgh Sleep Quality Index",
+      "subtitle": "Comprehensive self-report measure of sleep quality"
+    },
+    "study_info": {
+      "abstract": "The PSQI is a 19-item self-report questionnaire designed to assess sleep quality and sleep disturbances over a one-month time interval. It examines both objective and subjective sleep quality through seven component scores. Widely used in sleep research and clinical practice for identifying sleep disorders.",
+      "keywords": [
+        {"keyword": "sleep quality"},
+        {"keyword": "sleep disorders"},
+        {"keyword": "insomnia"},
+        {"keyword": "sleep disturbances"},
+        {"keyword": "sleep assessment"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "PSQI",
+    "full_name": "Pittsburgh Sleep Quality Index - 19 items",
+    "measurement_target": "Sleep quality and sleep disturbances",
+    "num_items": 19,
+    "response_scale": "Variable (0-3 point scales)",
+    "score_range": "0-21",
+    "subscales": ["Sleep Quality", "Sleep Latency", "Sleep Duration", "Sleep Efficiency", "Sleep Disturbances", "Use of Sleep Medication", "Daytime Dysfunction"],
+    "interpretation": "0-5: Good sleep quality; >5: Poor sleep quality",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.83",
+      "validity": "High sensitivity (0.89-0.90) and specificity (0.87-0.94) for sleep disorders",
+      "sensitivity": "0.89-0.90",
+      "specificity": "0.87-0.94"
+    },
+    "populations": ["General population", "Clinical samples", "Insomnia patients", "Sleep disorder populations"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "subscale": "Sleep Quality",
+      "question_text": "During the past month, what time have you usually gone to bed at night?",
+      "question_type": "Open-ended"
+    },
+    {
+      "question_no": 2,
+      "subscale": "Sleep Latency",
+      "question_text": "During the past month, how long (in minutes) has it usually taken you to fall asleep each night?",
+      "question_type": "Open-ended"
+    },
+    {
+      "question_no": 3,
+      "subscale": "Sleep Duration",
+      "question_text": "During the past month, what time have you usually gotten up in the morning?",
+      "question_type": "Open-ended"
+    },
+    {
+      "question_no": 4,
+      "subscale": "Sleep Duration",
+      "question_text": "During the past month, how many hours of actual sleep did you get at night?",
+      "question_type": "Open-ended"
+    },
+    {
+      "question_no": 5,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Cannot get to sleep within 30 minutes",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 6,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Wake up in the middle of the night or early morning",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 7,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Have to get up to use the bathroom",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 8,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Cannot breathe comfortably",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 9,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Cough or snore loudly",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 10,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Feel too cold",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 11,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Feel too hot",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 12,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Have bad dreams",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 13,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Have pain",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 14,
+      "subscale": "Sleep Disturbances",
+      "question_text": "Other reason(s), please describe",
+      "question_type": "Open-ended"
+    },
+    {
+      "question_no": 15,
+      "subscale": "Sleep Quality",
+      "question_text": "During the past month, how would you rate your sleep quality overall?",
+      "response_options": ["Very good", "Fairly good", "Fairly bad", "Very bad"]
+    },
+    {
+      "question_no": 16,
+      "subscale": "Use of Sleep Medication",
+      "question_text": "During the past month, how often have you taken medicine to help you sleep?",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 17,
+      "subscale": "Daytime Dysfunction",
+      "question_text": "During the past month, how often have you had trouble staying awake while driving, eating meals, or engaging in social activity?",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    },
+    {
+      "question_no": 18,
+      "subscale": "Daytime Dysfunction",
+      "question_text": "During the past month, how much of a problem has it been for you to keep up enthusiasm to get things done?",
+      "response_options": ["No problem at all", "Only a very slight problem", "Somewhat of a problem", "A very big problem"]
+    },
+    {
+      "question_no": 19,
+      "subscale": "Sleep Medication",
+      "question_text": "During the past month, how often have you felt sleepy while driving, eating meals, or engaging in social activity?",
+      "response_options": ["Not during past month", "Less than once a week", "Once or twice a week", "Three or more times a week"]
+    }
+  ]
+}

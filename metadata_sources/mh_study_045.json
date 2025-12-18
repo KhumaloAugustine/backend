@@ -1,0 +1,179 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.DASS21",
+    "title": "DASS-21 (Depression, Anxiety and Stress Scales)",
+    "producers": [
+      {
+        "name": "Lovibond, S. H., Lovibond, P. F.",
+        "affiliation": "University of New South Wales",
+        "role": "Original Developers"
+      }
+    ],
+    "prod_date": "1995",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.DASS21",
+      "title": "DASS-21: Depression, Anxiety and Stress Scales",
+      "subtitle": "21-item self-report measure of negative emotional states"
+    },
+    "study_info": {
+      "abstract": "The DASS-21 is a 21-item self-report screening instrument that measures three related negative emotional states: depression, anxiety, and stress. It is a shortened version of the 42-item DASS designed to assess these constructs in both clinical and non-clinical populations. Each item is rated on a 4-point scale based on experiences in the past week.",
+      "keywords": [
+        {"keyword": "depression screening"},
+        {"keyword": "anxiety assessment"},
+        {"keyword": "stress measurement"},
+        {"keyword": "negative affect"},
+        {"keyword": "emotional distress"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "DASS-21",
+    "full_name": "Depression, Anxiety and Stress Scales - 21 items",
+    "measurement_target": "Depression, anxiety, and stress symptoms",
+    "num_items": 21,
+    "response_scale": "4-point Likert (0=Did not apply, 1=Applied some, 2=Applied fairly, 3=Applied very much)",
+    "score_range": "0-126 (42 per subscale when doubled)",
+    "interpretation": "Depression: 0-9 Normal, 10-13 Mild, 14-20 Moderate, 21-27 Severe, 28+ Very Severe; Similar for Anxiety and Stress",
+    "subscales": ["Depression (7 items)", "Anxiety (7 items)", "Stress (7 items)"],
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.81-0.87",
+      "validity": "Good convergent and discriminant validity",
+      "sensitivity": "0.78-0.92",
+      "specificity": "0.70-0.92"
+    },
+    "populations": ["General population", "Clinical samples", "Adolescents and adults"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "I found it hard to wind down",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "I was aware of dryness of my mouth",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "I couldn't seem to experience any positive feeling at all",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "I experienced breathing difficulty",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "I found it difficult to work up the initiative to do things",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "I tended to over-react to situations",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "I experienced trembling",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "I felt sad and depressed",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "I was intolerant of anything that kept me from getting on with what I was doing",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "I felt I was close to panic",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "I found it hard to calm down after something upset me",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "I feared that I would be 'thrown' by some trivial mistake I made",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "I was unable to become enthusiastic about anything",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "I felt I wasn't worth much as a person",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "I felt that I was rather touchy",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 16,
+      "question_text": "I was aware of the action of my heart in the absence of physical exertion",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 17,
+      "question_text": "I felt scared without any good reason",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 18,
+      "question_text": "I felt that life was meaningless",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 19,
+      "question_text": "I found myself getting upset by quite minor things",
+      "subscale": "Stress",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 20,
+      "question_text": "I felt scared",
+      "subscale": "Anxiety",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    },
+    {
+      "question_no": 21,
+      "question_text": "I felt that I had nothing to look forward to",
+      "subscale": "Depression",
+      "response_options": ["Did not apply to me at all", "Applied to me some of the time", "Applied to me a considerable time", "Applied to me most of the time"]
+    }
+  ]
+}

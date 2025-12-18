@@ -1,0 +1,208 @@
+{
+  "doc_desc": {
+    "idno": "DDI.MH.INST.WHOQOL",
+    "title": "WHOQOL-BREF (World Health Organization Quality of Life)",
+    "producers": [
+      {
+        "name": "World Health Organization",
+        "affiliation": "WHO",
+        "role": "Original Developer"
+      }
+    ],
+    "prod_date": "1996",
+    "language": "English",
+    "version": "1.0"
+  },
+  "study_desc": {
+    "title_statement": {
+      "idno": "MH.INST.WHOQOL",
+      "title": "WHOQOL-BREF: Quality of Life Assessment",
+      "subtitle": "26-item self-report measure of quality of life"
+    },
+    "study_info": {
+      "abstract": "The WHOQOL-BREF is a 26-item cross-cultural quality of life assessment instrument developed by the World Health Organization. It measures four domains: physical health, psychological health, social relationships, and environment. Items are rated on various scales. Suitable for clinical practice and research in diverse populations.",
+      "keywords": [
+        {"keyword": "quality of life"},
+        {"keyword": "wellbeing"},
+        {"keyword": "health-related quality of life"},
+        {"keyword": "functional status"},
+        {"keyword": "life satisfaction"}
+      ]
+    }
+  },
+  "instrument_details": {
+    "instrument_name": "WHOQOL-BREF",
+    "full_name": "World Health Organization Quality of Life Assessment - Brief Version",
+    "measurement_target": "Quality of life and wellbeing",
+    "num_items": 26,
+    "response_scale": "Variable (1-5 point scales depending on item)",
+    "score_range": "26-130",
+    "subscales": ["Physical Health (7 items)", "Psychological Health (6 items)", "Social Relationships (3 items)", "Environment (8 items)"],
+    "interpretation": "Higher scores indicate better quality of life",
+    "psychometric_properties": {
+      "reliability": "Cronbach's alpha = 0.66-0.77",
+      "validity": "Good cross-cultural validity and responsiveness",
+      "sensitivity": "Variable by domain"
+    },
+    "populations": ["General population", "Clinical samples", "Cross-cultural populations"],
+    "languages": ["English", "Multiple languages available"]
+  },
+  "questions": [
+    {
+      "question_no": 1,
+      "question_text": "How would you rate your quality of life?",
+      "subscale": "Overall",
+      "response_options": ["Very poor", "Poor", "Neither poor nor good", "Good", "Very good"]
+    },
+    {
+      "question_no": 2,
+      "question_text": "How satisfied are you with your health?",
+      "subscale": "Overall",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 3,
+      "question_text": "To what extent do you feel that physical pain prevents you from doing what you need to do?",
+      "subscale": "Physical Health",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 4,
+      "question_text": "How much do you need any medical treatment to function in your daily life?",
+      "subscale": "Physical Health",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 5,
+      "question_text": "How much energy and fatigue do you experience?",
+      "subscale": "Physical Health",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 6,
+      "question_text": "How able are you to get around?",
+      "subscale": "Physical Health",
+      "response_options": ["Very poor", "Poor", "Neither poor nor good", "Good", "Very good"]
+    },
+    {
+      "question_no": 7,
+      "question_text": "How satisfied are you with your sleep?",
+      "subscale": "Physical Health",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 8,
+      "question_text": "How satisfied are you with your ability to perform daily activities?",
+      "subscale": "Physical Health",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 9,
+      "question_text": "How satisfied are you with your capacity for work?",
+      "subscale": "Psychological Health",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 10,
+      "question_text": "How much do you enjoy life?",
+      "subscale": "Psychological Health",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 11,
+      "question_text": "To what extent do you feel your life to be meaningful?",
+      "subscale": "Psychological Health",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 12,
+      "question_text": "How well are you able to concentrate?",
+      "subscale": "Psychological Health",
+      "response_options": ["Very poor", "Poor", "Neither poor nor good", "Good", "Very good"]
+    },
+    {
+      "question_no": 13,
+      "question_text": "How safe do you feel in your daily life?",
+      "subscale": "Psychological Health",
+      "response_options": ["Very insecure", "Insecure", "Neither secure nor insecure", "Secure", "Very secure"]
+    },
+    {
+      "question_no": 14,
+      "question_text": "How healthy is your physical environment?",
+      "subscale": "Psychological Health",
+      "response_options": ["Very poor", "Poor", "Neither poor nor good", "Good", "Very good"]
+    },
+    {
+      "question_no": 15,
+      "question_text": "How satisfied are you with your relationships?",
+      "subscale": "Social Relationships",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 16,
+      "question_text": "How satisfied are you with your sex life?",
+      "subscale": "Social Relationships",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 17,
+      "question_text": "How satisfied are you with the support you get from your friends?",
+      "subscale": "Social Relationships",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 18,
+      "question_text": "How satisfied are you with the conditions of your living place?",
+      "subscale": "Environment",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 19,
+      "question_text": "How satisfied are you with your access to health services?",
+      "subscale": "Environment",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 20,
+      "question_text": "How satisfied are you with your transport?",
+      "subscale": "Environment",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 21,
+      "question_text": "Do you have enough money to meet your needs?",
+      "subscale": "Environment",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 22,
+      "question_text": "How available to you is the information that you need in your day-to-day life?",
+      "subscale": "Environment",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 23,
+      "question_text": "To what extent do you have the opportunity for leisure activities?",
+      "subscale": "Environment",
+      "response_options": ["Not at all", "A little", "A moderate amount", "Very much", "An extreme amount"]
+    },
+    {
+      "question_no": 24,
+      "question_text": "How well are you able to get around?",
+      "subscale": "Environment",
+      "response_options": ["Very poor", "Poor", "Neither poor nor good", "Good", "Very good"]
+    },
+    {
+      "question_no": 25,
+      "question_text": "How satisfied are you with your ability to work?",
+      "subscale": "Psychological Health",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    },
+    {
+      "question_no": 26,
+      "question_text": "How satisfied are you overall with your life?",
+      "subscale": "Overall",
+      "response_options": ["Very dissatisfied", "Dissatisfied", "Neither satisfied nor dissatisfied", "Satisfied", "Very satisfied"]
+    }
+  ]
+}
