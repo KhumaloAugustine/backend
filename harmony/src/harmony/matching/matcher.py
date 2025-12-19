@@ -658,10 +658,9 @@ def match_instruments_with_function(
             # treat very small diffs as 0 → force polarity to +1
             similarity_polarity[np.abs(similarity_difference) < 1e-3] = 1
 
-            similarity_max = np.max(
-                [pairwise_similarity, pairwise_similarity_neg_mean], axis=0
-            )
-            similarity_with_polarity = similarity_max * similarity_polarity
+            # Use actual positive similarity with polarity sign
+            # This prevents inflated scores - we report the real similarity, not the max
+            similarity_with_polarity = pairwise_similarity * similarity_polarity
         except Exception:
             similarity_with_polarity = np.array([])
     else:

@@ -40,7 +40,7 @@ def generate_crosswalk_table(instruments: List[Instrument], item_to_item_similar
     Generate a crosswalk table for a list of instruments, given the similarity matrix that came out of the match function. A crosswalk is a list of pairs of variables from different studies that can be harmonised.
     @param instruments: The original list of instruments, each containing a question. The sum of the number of questions in all instruments is the total number of questions which should equal both the width and height of the similarity matrix.
     @param item_to_item_similarity_matrix: The cosine similarity matrix from Harmony
-    @param threshold: The minimum threshold that we consider a match. This is applied to the absolute match value. So if a question pair has similarity 0.2 and threshold = 0.5, then that question pair will be excluded. Leave as None if you don't want to apply any thresholding.
+    @param threshold: The minimum threshold that we consider a match. This is applied to the similarity score (considering polarity). Negative polarity scores indicate opposite meaning and will be excluded even if their absolute value is high. Leave as None if you don't want to apply any thresholding.
     @param is_allow_within_instrument_matches: Defaults to False. If this is set to True, we include crosswalk items that originate from the same instrument, which would otherwise be excluded by default.
     @param is_enforce_one_to_one: Defaults to False.  If this is set to True, we force all variables in the crosswalk table to be matched with exactly one other variable.
     @return: A crosswalk table as a DataFrame.
@@ -71,20 +71,26 @@ def generate_crosswalk_table(instruments: List[Instrument], item_to_item_similar
         for question in instrument.questions:
             all_questions.append((instrument_idx, question))
 
-    abs_similarities_between_instruments = np.abs(item_to_item_similarity_matrix)
+    # Keep original similarity with polarity - we only want positive matches
+    similarities_between_instruments = item_to_item_similarity_matrix.copy()
+    
+    if threshold is not None:
+        # Filter out low scores AND negative polarity (opposite meaning)
+        similarities_between_instruments[similarities_between_instruments < threshold] = 0
 
     coord_to_sim = {}
-    for question_2_idx in range(abs_similarities_between_instruments.shape[0]):
-        for question_1_idx in range(abs_similarities_between_instruments.shape[1]):
+    for question_2_idx in range(similarities_between_instruments.shape[0]):
+        for question_1_idx in range(similarities_between_instruments.shape[1]):
             if question_2_idx > question_1_idx:
-                coord_to_sim[(question_2_idx, question_1_idx)] = abs_similarities_between_instruments[
+                coord_to_sim[(question_2_idx, question_1_idx)] = similarities_between_instruments[
                     question_2_idx, question_1_idx]
 
     is_used_x = set()
     is_used_y = set()
     for (question_2_idx, question_1_idx), sim in sorted(coord_to_sim.items(), key=operator.itemgetter(1), reverse=True):
-        if question_1_idx not in is_used_x and question_2_idx not in is_used_y and (
-                threshold is None or abs_similarities_between_instruments[
+        # Only include positive polarity matches (sim > 0 means similar, not opposite)
+        if question_1_idx not in is_used_x and question_2_idx not in is_used_y and sim > 0 and (
+                threshold is None or similarities_between_instruments[
             (question_2_idx, question_1_idx)] >= threshold):
 
             instrument_1_idx, question_1 = all_questions[question_1_idx]

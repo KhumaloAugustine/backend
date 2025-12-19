@@ -332,8 +332,11 @@ def get_example_instruments() -> List[Instrument]:
     """
     Get example instruments.
     """
+    # Combine static examples with curated catalogue-derived instruments
+    static_examples = helpers.get_example_instruments()
+    catalogue_examples = helpers.get_example_instruments_from_catalogue()
 
-    return helpers.get_example_instruments()
+    return static_examples + catalogue_examples
 
 
 @router.get(path="/cache", response_model=CacheResponse, status_code=status.HTTP_200_OK,

@@ -153,6 +153,13 @@ class MetadataHarmonizer:
             citation_requirement = self._extract_citation_requirement(data_access)
             contact = self._extract_contact(data_access)
 
+            # Sanitize raw metadata to exclude instruments/questions
+            sanitized_raw: Dict[str, Any] = {
+                k: v
+                for k, v in raw_metadata.items()
+                if k in {"doc_desc", "study_desc", "schematype"}
+            }
+
             # Create harmonized metadata
             harmonized = HarmonizedMetadataSchema(
                 source_id=source_id,
@@ -178,7 +185,7 @@ class MetadataHarmonizer:
                 contact_email=contact.get("email"),
                 contact_uri=contact.get("uri"),
                 harmonization_status="harmonized",
-                raw_metadata=raw_metadata,
+                raw_metadata=sanitized_raw,
             )
 
             # Store in index

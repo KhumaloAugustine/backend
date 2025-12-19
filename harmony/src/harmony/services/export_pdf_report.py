@@ -276,19 +276,19 @@ def calculate_harmonisation_statistics(
     # Basic counts
     total_questions = sum(len(inst.questions or []) for inst in instruments)
     total_possible_matches = len(raw_matches)
-    successful_matches = sum(1 for _, _, score in raw_matches if abs(score) >= threshold)
+    successful_matches = sum(1 for _, _, score in raw_matches if score >= threshold)
     
-    # Questions that have at least one match above threshold
+    # Questions that have at least one match above threshold (positive polarity only)
     questions_with_matches = set()
     for i, j, score in raw_matches:
-        if abs(score) >= threshold:
+        if score >= threshold:
             questions_with_matches.add(i)
             questions_with_matches.add(j)
     
     harmonised_questions = len(questions_with_matches)
     
-    # Average scores
-    successful_scores = [abs(score) for _, _, score in raw_matches if abs(score) >= threshold]
+    # Average scores (only positive polarity matches)
+    successful_scores = [score for _, _, score in raw_matches if score >= threshold]
     
     avg_match_score = (sum(successful_scores) / len(successful_scores) * 100) if successful_scores else 0
     success_rate = (harmonised_questions / total_questions * 100) if total_questions > 0 else 0
@@ -302,13 +302,13 @@ def calculate_harmonisation_statistics(
         inst_name = inst.instrument_name or f"Instrument {inst_num + 1}"
         inst_questions = set(range(idx, idx + len(inst.questions or [])))
         
-        # Count matches for this instrument
+        # Count matches for this instrument (positive polarity only)
         inst_matches = sum(1 for i, j, score in raw_matches 
-                          if abs(score) >= threshold and (i in inst_questions or j in inst_questions))
+                          if score >= threshold and (i in inst_questions or j in inst_questions))
         
-        # Average score for this instrument
-        inst_scores = [abs(score) for i, j, score in raw_matches 
-                      if abs(score) >= threshold and (i in inst_questions or j in inst_questions)]
+        # Average score for this instrument (positive polarity only)
+        inst_scores = [score for i, j, score in raw_matches 
+                      if score >= threshold and (i in inst_questions or j in inst_questions)]
         inst_avg_score = (sum(inst_scores) / len(inst_scores) * 100) if inst_scores else 0
         
         by_instrument[inst_name] = {
@@ -415,7 +415,7 @@ def generate_pdf_report(
         # 6) Render each passing match
         total_w = w1 + w2 + w3
         for i, j, score in raw_matches:
-            if abs(score) >= threshold:
+            if score >= threshold:
                 inst1, q1_no = question_meta.get(i, ("Unknown", "?"))
                 inst2, q2_no = question_meta.get(j, ("Unknown", "?"))
                 
@@ -501,14 +501,14 @@ def generate_harmony_pdf_report(
     if sim is None or questions is None:
         raise ValueError("Invalid match response: missing similarity matrix or questions")
     
-    # Collect all matches
+    # Collect all matches with positive polarity (actual harmonisation candidates)
     raw_matches = []
     for i in range(sim.shape[0]):
-        for j in range(sim.shape[1]):
-            if i != j and sim[i][j] > 0:
+        for j in range(i + 1, sim.shape[1]):  # Only upper triangle to avoid duplicates
+            if sim[i][j] > 0:  # Only positive polarity = actual similar items
                 raw_matches.append((i, j, sim[i][j]))
     
-    raw_matches.sort(key=lambda x: abs(x[2]), reverse=True)
+    raw_matches.sort(key=lambda x: x[2], reverse=True)  # Sort by actual score
     
     # Calculate statistics
     stats = calculate_harmonisation_statistics(match_response, instruments, raw_matches, threshold)
@@ -559,8 +559,8 @@ def generate_harmony_pdf_report(
     # Instruments overview
     pdf.add_instruments_overview(instruments, stats)
     
-    # Detailed matches
-    displayed_matches = [m for m in raw_matches if abs(m[2]) >= threshold][:max_matches_displayed]
+    # Detailed matches (positive polarity only)
+    displayed_matches = [m for m in raw_matches if m[2] >= threshold][:max_matches_displayed]
     
     pdf.chapter_title(f"Top Harmonised Question Pairs (Showing {len(displayed_matches)})")
     
